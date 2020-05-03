@@ -9,6 +9,7 @@ import Platform from './sections/platform';
 import Team from './sections/team';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
+import Seo from './sections/seo';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Team />
       <Clients />
       <Contact />
+      <Seo />
     </>
   );
 }

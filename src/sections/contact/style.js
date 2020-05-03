@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  margin-top: 80px;
   background-color: #fff;
+  padding: 120px 0;
 `;
 
 export const Container = styled.div`
