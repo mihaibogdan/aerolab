@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const moveLeft = keyframes`
+  from {
+    left: 0%
+  }
+
+  to {
+    left: -100%;
+  }
+`;
 
 export const HeroSection = styled.section`
   height: 100vh;
@@ -59,4 +69,6 @@ export const WaveAnimation = styled.svg`
   position: absolute;
   bottom: 0;
   left: 0;
+
+  animation: ${moveLeft} 6s linear infinite;
 `;
