@@ -52,7 +52,7 @@ export const Paragraph = styled.p`
   font-weight: 400;
   ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
   color: #fff;
-  ${(props) => props.color && `color: ${props.color}`}
+  ${(props) => props.color && `color: ${props.color};`}
   line-height: 1.8;
   margin: 0;
   ${(props) => props.margin && `margin: ${props.margin}`}
@@ -62,10 +62,11 @@ export const Paragraph = styled.p`
 
 export const Link = styled.a`
   color: #4fce5d;
-  ${(props) => props.color && `color: ${props.color}`}
+  ${(props) => props.color && `color: ${props.color};`}
   font-size: 15px;
   ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
   font-weight: 500;
+  ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
   position: relative;
 
   &::after {

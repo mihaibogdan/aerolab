@@ -5,7 +5,7 @@ import TwitterIcon from '../../assets/img/twitter.svg';
 import InstagramIcon from '../../assets/img/instagram.svg';
 
 import { Heading5, Paragraph } from '../../assets/styles/typography';
-import { SliderCard, CardAvatar, SocialIcon, SocialIcons } from './style';
+import { SliderCard, CardAvatar, SocialIcons, SocialIcon } from './style';
 
 function TeamCard({
   cardAvatar,

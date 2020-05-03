@@ -10,6 +10,7 @@ import Team from './sections/team';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
 import Seo from './sections/seo';
+import Footer from './sections/footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Clients />
       <Contact />
       <Seo />
+      <Footer />
     </>
   );
 }
