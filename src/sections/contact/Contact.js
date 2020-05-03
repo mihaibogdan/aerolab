@@ -33,7 +33,7 @@ function Contact() {
           </LeftSection>
 
           <RightSection>
-            <Image src="src/assets/img/contact-image.png" />
+            <Image src="src/assets/img/contact/contact-image.png" />
           </RightSection>
         </Container>
       </Section>
