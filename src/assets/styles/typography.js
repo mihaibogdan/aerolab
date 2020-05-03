@@ -23,8 +23,10 @@ export const Heading2 = styled.h2`
 export const Heading4 = styled.h4`
   font-size: 34px;
   font-weight: 500;
+  ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
   line-height: 1.23;
   margin: 0px 0px 20px 0px;
+  ${(props) => props.margin && `margin: ${props.margin}`}
   color: #fff;
   ${(props) => props.color && `color: ${props.color}`};
 `;
@@ -46,6 +48,7 @@ export const Heading6 = styled.h6`
   color: #6d70a6;
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
+  ${(props) => props.textAlign && `text-align: ${props.textAlign}`};
 `;
 
 export const Paragraph = styled.p`
@@ -68,6 +71,8 @@ export const Link = styled.a`
   ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
   font-weight: 500;
   ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
+  margin: 0;
+  ${(props) => props.margin && `margin: ${props.margin}`}
   position: relative;
 
   &::after {

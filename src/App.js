@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Home from './sections/home';
 import About from './sections/about';
 import Platform from './sections/platform';
+import TabSection from './sections/tab-section';
 import Team from './sections/team';
 import Product from './sections/product';
 import Clients from './sections/clients';
@@ -21,6 +22,7 @@ function App() {
       <Home />
       <About />
       <Platform />
+      <TabSection />
       <Team />
       <Product />
       <Clients />

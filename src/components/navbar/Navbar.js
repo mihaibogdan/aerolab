@@ -24,7 +24,11 @@ function Navbar() {
     <>
       <Nav className={scrollStarted ? 'scrolledNavbar' : ''}>
         <img
-          src={!scrollStarted ? 'src/assets/img/light-logo.png' : 'src/assets/img/dark-logo.png'}
+          src={
+            !scrollStarted
+              ? 'src/assets/img/hero/light-logo.png'
+              : 'src/assets/img/hero/dark-logo.png'
+          }
           alt=""
         />
         <MenuItems>

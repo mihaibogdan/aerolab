@@ -36,7 +36,7 @@ function Home() {
         </LeftSection>
 
         <RightSection>
-          <Image src="src/assets/img/startup-thumb.png" />
+          <Image src="src/assets/img/hero/startup-thumb.png" />
         </RightSection>
 
         <WaveAnimation

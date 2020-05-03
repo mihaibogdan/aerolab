@@ -39,6 +39,7 @@ export const SocialIcon = styled.a`
   ::after {
     background-color: #5945e6;
     color: #fff;
+    line-height: 1.2;
     content: attr(aria-label);
     position: absolute;
     padding: 10px 8px;

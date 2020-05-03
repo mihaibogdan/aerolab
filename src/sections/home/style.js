@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeroSection = styled.section`
   height: 100vh;
   background: linear-gradient(-259deg, #5e60e7, #9c7af2 65%);
-  background: url('src/assets/img/startup-bg.jpg');
+  background: url('src/assets/img/hero/startup-bg.jpg');
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -49,6 +49,7 @@ export const RightSection = styled.div`
 
 export const Image = styled.img`
   width: 100%;
+  max-width: 856px;
   position: relative;
   bottom: -32px;
 `;

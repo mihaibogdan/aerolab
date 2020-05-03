@@ -22,7 +22,7 @@ import { Paragraph, Heading6 } from '../../assets/styles/typography';
 import FacebookIcon from '../../assets/img/facebook.svg';
 import TwitterIcon from '../../assets/img/twitter.svg';
 import InstagramIcon from '../../assets/img/instagram.svg';
-import LogoImg from '../../assets/img/light-logo.png';
+import LogoImg from '../../assets/img/hero/light-logo.png';
 
 function Footer() {
   return (

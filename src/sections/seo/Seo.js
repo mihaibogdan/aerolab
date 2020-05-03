@@ -3,8 +3,8 @@ import React from 'react';
 import { Heading2, Paragraph } from '../../assets/styles/typography';
 import { Section, Container, CenteredTitle, Stores } from './style';
 
-import PlayStore from '../../assets/img/play-store.jpg';
-import AppStore from '../../assets/img/app-store.jpg';
+import PlayStore from '../../assets/img/play-store.png';
+import AppStore from '../../assets/img/app-store.png';
 
 function Seo() {
   return (
