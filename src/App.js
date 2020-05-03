@@ -7,6 +7,7 @@ import Home from './sections/home';
 import About from './sections/about';
 import Platform from './sections/platform';
 import Team from './sections/team';
+import Clients from './sections/clients';
 import Contact from './sections/contact';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Platform />
       <Team />
+      <Clients />
       <Contact />
     </>
   );
