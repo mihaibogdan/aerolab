@@ -7,6 +7,7 @@ import Home from './sections/home';
 import About from './sections/about';
 import Platform from './sections/platform';
 import Team from './sections/team';
+import Product from './sections/product';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
 import Seo from './sections/seo';
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Platform />
       <Team />
+      <Product />
       <Clients />
       <Contact />
       <Seo />

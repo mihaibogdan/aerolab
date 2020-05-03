@@ -35,6 +35,7 @@ export const Heading5 = styled.h5`
   line-height: 1.23;
   margin: 24px 0px 12px 0px;
   color: #333;
+  ${(props) => props.color && `color: ${props.color}`};
 `;
 
 export const Heading6 = styled.h6`
