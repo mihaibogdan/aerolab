@@ -6,9 +6,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100%;
 
-    /* -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility; */
+    text-rendering: optimizeLegibility;
 
     font-family: Rubik, sans-serif;
     font-size: 15px;

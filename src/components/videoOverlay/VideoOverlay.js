@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Overlay, VideoYoutube, CloseButton } from './style';
-import CloseIcon from '../../assets/img/close.svg';
+import CloseIcon from '../../assets/img/about/close.svg';
 
 function VideoOverlay({ onClose }) {
   return (

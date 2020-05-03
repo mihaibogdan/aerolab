@@ -22,8 +22,26 @@ export const CenteredTitle = styled.div`
 
 export const TabContent = styled.div`
   width: 100%;
-  display: flex;
   margin-top: 80px;
+  display: flex;
+
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.fade-appear,
+  &.fade-enter {
+    opacity: 0;
+  }
+
+  &.fade-appear-active,
+  &.fade-appear-done,
+  &.fade-enter-active,
+  &.fade-enter-done {
+    opacity: 1;
+  }
+
+  &.fade-exit {
+    display: none;
+  }
 `;
 
 export const LeftSection = styled.div`
@@ -78,4 +96,39 @@ export const CardContent = styled.div`
   margin-left: 40px;
   display: flex;
   flex-direction: column;
+`;
+
+export const TabList = styled.div`
+  display: flex;
+  margin: 60px auto 40px auto;
+`;
+
+export const Tab = styled.button`
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 21px 20px 19px;
+  margin: 0px 10px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  color: #696969;
+  min-width: 200px;
+  border-radius: 5px;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    background-color: #7c82fe;
+    color: #fff;
+    border: 1px solid transparent;
+
+    &:hover {
+      cursor: default !important;
+    }
+  }
 `;

@@ -28,7 +28,7 @@ function Team() {
 
           <Swiper {...params}>
             <TeamCard
-              cardAvatar="src/assets/img/avatar1.png"
+              cardAvatar="src/assets/img/team/avatar1.png"
               cardTitle="Chad Brewer"
               cardSubtitle="Director"
               facebook="#"
@@ -36,7 +36,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar2.png"
+              cardAvatar="src/assets/img/team/avatar2.png"
               cardTitle="Eric Smith"
               cardSubtitle="CEO Founder"
               facebook="#"
@@ -44,7 +44,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar3.png"
+              cardAvatar="src/assets/img/team/avatar3.png"
               cardTitle="Erik Murray"
               cardSubtitle="Founder"
               facebook="#"
@@ -52,7 +52,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar4.png"
+              cardAvatar="src/assets/img/team/avatar4.png"
               cardTitle="Cynthia Casey"
               cardSubtitle="Designer"
               facebook="#"
@@ -60,7 +60,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar1.png"
+              cardAvatar="src/assets/img/team/avatar1.png"
               cardTitle="Chad Brewer"
               cardSubtitle="Director"
               facebook="#"
@@ -68,7 +68,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar1.png"
+              cardAvatar="src/assets/img/team/avatar1.png"
               cardTitle="Chad Brewer"
               cardSubtitle="Director"
               facebook="#"
@@ -76,7 +76,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar2.png"
+              cardAvatar="src/assets/img/team/avatar2.png"
               cardTitle="Eric Smith"
               cardSubtitle="CEO Founder"
               facebook="#"
@@ -84,7 +84,7 @@ function Team() {
               instagram="#"
             />
             <TeamCard
-              cardAvatar="src/assets/img/avatar3.png"
+              cardAvatar="src/assets/img/team/avatar3.png"
               cardTitle="Erik Murray"
               cardSubtitle="Founder"
               facebook="#"

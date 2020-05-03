@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FacebookIcon from '../../assets/img/facebook.svg';
-import TwitterIcon from '../../assets/img/twitter.svg';
-import InstagramIcon from '../../assets/img/instagram.svg';
+import FacebookIcon from '../../assets/img/team/facebook.svg';
+import TwitterIcon from '../../assets/img/team/twitter.svg';
+import InstagramIcon from '../../assets/img/team/instagram.svg';
 
 import { Heading5, Paragraph } from '../../assets/styles/typography';
 import { SliderCard, CardAvatar, SocialIcons, SocialIcon } from './style';

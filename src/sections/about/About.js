@@ -31,45 +31,45 @@ function About() {
               document.body.classList.add('video-open');
             }}
           >
-            <img src="src/assets/img/play-circle.svg" alt="" />
+            <img src="src/assets/img/about/play-circle.svg" alt="" />
             <span className="videoButtonText">Intro & Demo Video</span>
           </VideoButton>
 
           <CardGrid>
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon1.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon1.png" alt="" />}
               cardTitle="Web Development"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon2.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon2.png" alt="" />}
               cardTitle="Social Media"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon3.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon3.png" alt="" />}
               cardTitle="SEO Marketing"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
 
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon4.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon4.png" alt="" />}
               cardTitle="Keywords Search"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon5.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon5.png" alt="" />}
               cardTitle="Email optimization"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/box-icon6.png" alt="" />}
+              cardIcon={<img src="src/assets/img/about/box-icon6.png" alt="" />}
               cardTitle="Web Design"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />

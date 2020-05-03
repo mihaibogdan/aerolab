@@ -36,7 +36,7 @@ export const DownloadSection = styled.div`
 `;
 
 export const DownloadCard = styled.div`
-  background: url(src/assets/img/download-section-bg.png) 55% 100%,
+  background: url(src/assets/img/platform/download-section-bg.png) 55% 100%,
     linear-gradient(-138deg, #5e60e7, #9c7af2 50%, #5e60e7);
   background-repeat: no-repeat;
   border-radius: 5px;

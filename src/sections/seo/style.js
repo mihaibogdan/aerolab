@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   background: #f5f7fd;
-  background: url(./src/assets/img/seo-bg.png) top right 170px no-repeat,
+  background: url(./src/assets/img/contact/seo-bg.png) top right 170px no-repeat,
     linear-gradient(-259deg, #8383ed, #b095f5 65%);
   padding: 120px 0;
 `;

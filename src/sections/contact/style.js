@@ -27,6 +27,7 @@ export const RightSection = styled.div`
 export const Image = styled.img`
   width: 90%;
   height: auto;
+  align-self: flex-start;
   margin-left: 120px;
 `;
 

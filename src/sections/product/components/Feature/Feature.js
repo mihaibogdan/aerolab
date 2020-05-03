@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Heading5, Paragraph } from '../../../../assets/styles/typography';
 import { FeatureWrapper, FeatureIcon } from './style';
-import SquareIcon from '../../../../assets/img/square.svg';
+import SquareIcon from '../../../../assets/img/product/square.svg';
 
 function Feature({ name, description, ...props }) {
   return (

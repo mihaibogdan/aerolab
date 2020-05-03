@@ -31,38 +31,38 @@ function Platform() {
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/react.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/react.svg" alt="" />}
               cardTitle="React Native"
             />
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/microsoft.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/microsoft.svg" alt="" />}
               cardTitle="Windows"
             />
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/apple.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/apple.svg" alt="" />}
               cardTitle="MacOS"
             />
 
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/java.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/java.svg" alt="" />}
               cardTitle="Java"
             />
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/android.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/android.svg" alt="" />}
               cardTitle="Android"
             />
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/php.svg" alt="" />}
+              cardIcon={<img src="src/assets/img/platform/php.svg" alt="" />}
               cardTitle="PHP"
             />
           </CardGrid>
@@ -76,7 +76,7 @@ function Platform() {
               <SolidButton>Get AeroLand</SolidButton>
             </DownloadCard>
 
-            <MacbookImage src="src/assets/img/macbook-download.png" />
+            <MacbookImage src="src/assets/img/platform/macbook-download.png" />
           </DownloadSection>
         </Container>
       </Section>
