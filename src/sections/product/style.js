@@ -34,7 +34,7 @@ export const Column = styled.div`
 
   &:first-child {
     width: calc(33.333% - 30px);
-    margin-right: 30px;
+    margin-right: 45px;
     flex-grow: 0;
   }
 `;
