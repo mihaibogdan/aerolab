@@ -63,7 +63,7 @@ export const Nav = styled.nav`
       background-color: #fff;
       color: #5945e6;
       width: 100%;
-      padding: 15px 0px;
+      padding: 0 0px;
       margin-top: 4px;
       order: 3;
 

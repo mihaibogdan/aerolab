@@ -23,6 +23,18 @@ function Navbar() {
     return () => window.removeEventListener('scroll', checkScrollStarted);
   }, []);
 
+  const calcHeight = () => {
+    const nrOfNodes = menuItemsEl.current.childNodes.length;
+    const [firstNode] = menuItemsEl.current.childNodes;
+    const nodeHeight = firstNode.offsetHeight;
+    const nodeMT = +window.getComputedStyle(firstNode).marginTop.replace('px', '');
+    const nodeMB = +window.getComputedStyle(firstNode).marginBottom.replace('px', '');
+
+    const nodeTotalHeight = nodeHeight + nodeMT + nodeMB;
+
+    return nrOfNodes * nodeTotalHeight;
+  };
+
   return (
     <>
       <Nav className={`${scrollStarted ? 'scrolledNavbar' : ''}`}>
@@ -63,7 +75,7 @@ function Navbar() {
 
         <HamburgerMenu
           className="hamburger-menu"
-          onClick={() => setHeightMenu(menuItemsEl.current.offsetHeight)}
+          onClick={() => setHeightMenu(heightMenu ? 0 : calcHeight())}
         >
           <Menu color="#5945e6" width="20px" />
         </HamburgerMenu>
