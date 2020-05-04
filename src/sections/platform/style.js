@@ -10,6 +10,13 @@ export const Container = styled.div`
   display: flex;
   ${(props) => props.display && `display: ${props.display}`}
   flex-direction: column;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+  }
 `;
 
 export const CenteredTitle = styled.div`
@@ -27,21 +34,24 @@ export const CardGrid = styled.div`
 
   .platformCard {
     width: 16.666%;
+
+    @media screen and (max-width: 1200px) {
+      width: 33.333%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
   }
 `;
 
 export const DownloadSection = styled.div`
-  margin-top: 80px;
+  margin: 80px 0px;
   position: relative;
-`;
-
-export const DownloadCard = styled.div`
   background: url(src/assets/img/platform/download-section-bg.png) 55% 100%,
     linear-gradient(-138deg, #5e60e7, #9c7af2 50%, #5e60e7);
   background-repeat: no-repeat;
   border-radius: 5px;
   height: 305px;
-  padding-left: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,10 +59,46 @@ export const DownloadCard = styled.div`
   button {
     align-self: flex-start;
   }
+
+  @media screen and (max-width: 1200px) {
+    height: auto;
+    padding-top: 80px;
+    flex-direction: row;
+    margin: 0px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 80px;
+    margin: 0px 15px;
+  }
+`;
+
+export const DownloadCard = styled.div`
+  padding-left: 70px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 30px;
+  }
 `;
 
 export const MacbookImage = styled.img`
   position: absolute;
   top: -50px;
   right: -70px;
+
+  @media screen and (max-width: 1200px) {
+    position: relative;
+    width: 50%;
+    top: 0px;
+    right: 0px;
+    order: 0;
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    align-self: center;
+    order: 0;
+    width: calc(100% - 60px);
+    margin: 0px 30px;
+  }
 `;

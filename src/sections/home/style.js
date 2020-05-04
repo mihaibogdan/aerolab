@@ -11,7 +11,7 @@ const moveLeft = keyframes`
 `;
 
 export const HeroSection = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(-259deg, #5e60e7, #9c7af2 65%);
   background: url('src/assets/img/hero/startup-bg.jpg');
   background-repeat: none;
@@ -22,6 +22,18 @@ export const HeroSection = styled.section`
   display: flex;
   overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: 1600px) {
+    padding: 0px 50px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 15px 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftSection = styled.div`
@@ -29,6 +41,11 @@ export const LeftSection = styled.div`
   height: 100vh;
   display: flex;
   justify-self: flex-start;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: 100%;
+  }
 `;
 
 export const TextBlock = styled.div`
@@ -55,6 +72,11 @@ export const RightSection = styled.div`
   height: 100vh;
   display: flex;
   align-items: flex-end;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`

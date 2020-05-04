@@ -19,6 +19,23 @@ function Clients() {
     autoplay: true,
     slidesPerView: 5,
     spaceBetween: 30,
+    breakpoints: {
+      1199: {
+        slidesPerView: 5,
+      },
+
+      991: {
+        slidesPerView: 5,
+      },
+
+      767: {
+        slidesPerView: 4,
+      },
+
+      320: {
+        slidesPerView: 3,
+      },
+    },
   };
   return (
     <>

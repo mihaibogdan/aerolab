@@ -13,6 +13,17 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   ${(props) => props.display && `display: ${props.display}`}
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 0 15px 0px 15px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 0 15px 0px 15px;
+    flex-direction: column;
+  }
 `;
 
 export const Separator = styled.hr`
@@ -26,6 +37,11 @@ export const Info = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 300px;
   padding: 87px 0 90px 0;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
 `;
 
 export const Logo = styled.img`
@@ -57,6 +73,10 @@ export const Copyright = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const SocialIcons = styled.div`

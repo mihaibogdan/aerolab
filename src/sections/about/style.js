@@ -10,6 +10,15 @@ export const Container = styled.div`
   display: flex;
   ${(props) => props.display && `display: ${props.display}`}
   flex-direction: column;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 0px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 0px 15px;
+  }
 `;
 
 export const CenteredTitle = styled.div`
@@ -27,6 +36,13 @@ export const CardGrid = styled.div`
   .aboutCard {
     width: calc(33.333% - 30px);
     margin: 15px;
+
+    @media screen and (max-width: 992px) {
+      width: calc(50% - 30px);
+    }
+    @media screen and (max-width: 768px) {
+      width: calc(100% - 30px);
+    }
   }
 `;
 

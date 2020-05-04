@@ -15,6 +15,15 @@ export const Container = styled.div`
   .section-description {
     line-height: 2.14;
   }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 0 15px 0px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 0 15px 0px 15px;
+  }
 `;
 
 export const CenteredTitle = styled.div`
@@ -36,6 +45,10 @@ export const Column = styled.div`
     width: calc(33.333% - 30px);
     margin-right: 45px;
     flex-grow: 0;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -58,11 +71,16 @@ export const FeaturesGrid = styled.div`
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 export const FeatureImage = styled.img`
   border-radius: 20px;
   position: absolute;
+  width: 100%;
 
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -80,5 +98,11 @@ export const FeatureImage = styled.img`
 
   &.fade-exit {
     opacity: 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
   }
 `;

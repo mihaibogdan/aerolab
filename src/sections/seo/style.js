@@ -5,6 +5,10 @@ export const Section = styled.section`
   background: url(./src/assets/img/contact/seo-bg.png) top right 170px no-repeat,
     linear-gradient(-259deg, #8383ed, #b095f5 65%);
   padding: 120px 0;
+
+  @media screen and (max-width: 960px) {
+    padding: 60px 15px;
+  }
 `;
 
 export const Container = styled.div`

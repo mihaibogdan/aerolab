@@ -10,6 +10,16 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   ${(props) => props.display && `display: ${props.display}`}
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 0 15px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 0 15px;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const LeftSection = styled.div`
@@ -17,11 +27,20 @@ export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RightSection = styled.div`
   width: 50%;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const Image = styled.img`
@@ -29,6 +48,10 @@ export const Image = styled.img`
   height: auto;
   align-self: flex-start;
   margin-left: 120px;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const Input = styled.input`

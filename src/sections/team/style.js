@@ -11,6 +11,15 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 120px 0px;
 
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 120px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 120px 15px;
+  }
+
   .swiper-pagination {
     position: static;
     margin-top: 50px;

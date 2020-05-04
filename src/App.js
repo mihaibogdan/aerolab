@@ -21,12 +21,12 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      {/* <Platform /> */}
+      <Platform />
       <TabSection />
       <Team />
-      {/* <Product /> */}
+      <Product />
       <Clients />
-      {/* <Contact /> */}
+      <Contact />
       <Seo />
       <Footer />
     </>

@@ -9,8 +9,12 @@ export const MenuItems = styled.div`
   }
 
   transition: height 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: ${(props) => `${props.heightMenu}px`};
+  height: auto;
   overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+    height: ${(props) => `${props.heightMenu}px`};
+  }
 `;
 
 export const HamburgerMenu = styled.button`
@@ -48,6 +52,10 @@ export const Nav = styled.nav`
       border: 1px solid rgba(0, 0, 0, 0.2);
     }
   }
+  @media screen and (max-width: 1600px) {
+    padding: 0px 50px;
+  }
+
   @media screen and (max-width: 1200px) {
     padding: 15px 15px;
     flex-wrap: wrap;

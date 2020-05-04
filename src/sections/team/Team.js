@@ -14,6 +14,23 @@ function Team() {
       el: '.swiper-pagination',
       clickable: true,
     },
+    breakpoints: {
+      1199: {
+        slidesPerView: 4,
+      },
+
+      991: {
+        slidesPerView: 3,
+      },
+
+      767: {
+        slidesPerView: 2,
+      },
+
+      320: {
+        slidesPerView: 1,
+      },
+    },
   };
   return (
     <>

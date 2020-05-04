@@ -10,6 +10,15 @@ export const Container = styled.div`
   position: relative;
   margin: 0 auto;
   padding: 0 15px 75px 15px;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 992px;
+    padding: 0 15px 75px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 576px;
+    padding: 0 15px 75px 15px;
+  }
 `;
 
 export const CenteredTitle = styled.div`
