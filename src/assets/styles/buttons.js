@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SolidButton = styled.button`
   padding: 18px 36px;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0;
@@ -16,6 +17,7 @@ export const SolidButton = styled.button`
   cursor: pointer;
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
   &:hover {
     transform: translateY(-3px);
   }
@@ -23,6 +25,7 @@ export const SolidButton = styled.button`
 
 export const GradientButton = styled.button`
   padding: 18px 36px;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0;

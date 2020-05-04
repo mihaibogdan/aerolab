@@ -106,6 +106,7 @@ export const TabList = styled.div`
 export const Tab = styled.button`
   text-transform: uppercase;
   text-align: center;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
