@@ -175,7 +175,7 @@ function TabSection() {
               </Tab>
             ))}
           </TabList>
-          <TransitionGroup>
+          <TransitionGroup className="transition-group">
             {tabs.map((tab, index) =>
               index === activeTab ? (
                 <CSSTransition

@@ -12,6 +12,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  .transition-group {
+    width: 100%;
+  }
+
   @media screen and (max-width: 1200px) {
     max-width: 992px;
     padding: 0 15px 0px 15px;
@@ -63,6 +67,7 @@ export const LeftSection = styled.div`
 
   @media screen and (max-width: 1200px) {
     width: 100%;
+    text-align: center;
   }
 `;
 
