@@ -54,58 +54,17 @@ function Clients() {
           >
             We deliver the best services for app design and coding
           </Paragraph>
-
-          <Swiper {...params}>
-            <img
-              src={Firefox}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-            />
-            <img
-              src={Bullfit}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="250"
-            />
-            <img
-              src={Adroll}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="300"
-            />
-            <img
-              src={Eventbrite}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="350"
-            />
-            <img
-              src={Aqua}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="400"
-            />
-            <img
-              src={Pencil}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="450"
-            />
-            <img
-              src={Sixbase}
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="500"
-            />
-          </Swiper>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <Swiper {...params}>
+              <img src={Firefox} alt="" />
+              <img src={Bullfit} alt="" />
+              <img src={Adroll} alt="" />
+              <img src={Eventbrite} alt="" />
+              <img src={Aqua} alt="" />
+              <img src={Pencil} alt="" />
+              <img src={Sixbase} alt="" />
+            </Swiper>
+          </div>
         </Container>
       </Section>
     </>
