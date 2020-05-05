@@ -104,5 +104,9 @@ export const FeatureImage = styled.img`
     position: relative;
     width: 100%;
     margin-top: 20px;
+
+    &.fade-exit {
+      display: none;
+    }
   }
 `;
