@@ -7,6 +7,10 @@ export const Heading1 = styled.h1`
   margin: 0;
   color: #fff;
   ${(props) => props.color && `color: ${props.color}`}
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 export const Heading2 = styled.h2`
@@ -18,6 +22,10 @@ export const Heading2 = styled.h2`
   color: #2e3280;
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 34px;
+  }
 `;
 
 export const Heading4 = styled.h4`
@@ -29,6 +37,10 @@ export const Heading4 = styled.h4`
   ${(props) => props.margin && `margin: ${props.margin}`}
   color: #fff;
   ${(props) => props.color && `color: ${props.color}`};
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Heading5 = styled.h5`
@@ -38,6 +50,10 @@ export const Heading5 = styled.h5`
   margin: 24px 0px 12px 0px;
   color: #333;
   ${(props) => props.color && `color: ${props.color}`};
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const Heading6 = styled.h6`
@@ -49,6 +65,10 @@ export const Heading6 = styled.h6`
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
   ${(props) => props.textAlign && `text-align: ${props.textAlign}`};
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const Paragraph = styled.p`
