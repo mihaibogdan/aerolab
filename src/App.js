@@ -17,7 +17,7 @@ import Seo from './sections/seo';
 import Footer from './sections/footer';
 
 AOS.init({
-  // once: true,
+  once: true,
 });
 
 function App() {
