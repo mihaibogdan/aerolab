@@ -185,5 +185,6 @@ export const Tab = styled.button`
   @media screen and (max-width: 768px) {
     margin-bottom: 10px;
     padding: 12px 13px 12px;
+    width: 100%;
   }
 `;

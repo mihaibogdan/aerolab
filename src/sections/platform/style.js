@@ -34,6 +34,10 @@ export const CardGrid = styled.div`
   flex-wrap: wrap;
   margin: 60px 100px;
 
+  @media screen and (max-width: 768px) {
+    margin: 30px 15px;
+  }
+
   .platformCard {
     width: 16.666%;
 
@@ -80,7 +84,7 @@ export const DownloadCard = styled.div`
   padding-left: 70px;
 
   @media screen and (max-width: 768px) {
-    padding-left: 30px;
+    padding: 0px 15px;
   }
 `;
 

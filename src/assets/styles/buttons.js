@@ -17,9 +17,12 @@ export const SolidButton = styled.button`
   cursor: pointer;
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   &:hover {
     transform: translateY(-3px);
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
   }
 `;
 
@@ -42,5 +45,9 @@ export const GradientButton = styled.button`
   &:hover {
     transform: translateY(-3px);
     background-position: 100%;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
   }
 `;

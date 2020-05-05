@@ -12,6 +12,7 @@ import {
   TextBlock,
   CTARow,
   Image,
+  QuestionsText,
   WaveAnimation,
 } from './style';
 
@@ -31,10 +32,12 @@ function Home() {
               </Paragraph>
               <CTARow>
                 <SolidButton>Get Started</SolidButton>
-                <Paragraph margin="0px 5px 0px 20px" fontWeight="500">
-                  Questions?
-                </Paragraph>
-                <Link href="https://google.com">Talk to our team</Link>
+                <QuestionsText>
+                  <Paragraph margin="0px 5px 0px 20px" fontWeight="500">
+                    Questions?
+                  </Paragraph>
+                  <Link href="https://google.com">Talk to our team</Link>
+                </QuestionsText>
               </CTARow>
             </TextBlock>
           </LeftSection>

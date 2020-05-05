@@ -67,6 +67,18 @@ export const CTARow = styled.div`
   margin-top: 30px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const QuestionsText = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
 `;
 
 export const RightSection = styled.div`
