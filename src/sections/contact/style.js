@@ -56,6 +56,7 @@ export const Image = styled.img`
 
 export const Input = styled.input`
   color: #ababab;
+  box-shadow: none;
   background-color: #f8f8f8;
   font-size: 15px;
   letter-spacing: 0;
@@ -71,6 +72,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   color: #ababab;
+  box-shadow: none;
   background-color: #f8f8f8;
   font-size: 15px;
   letter-spacing: 0;

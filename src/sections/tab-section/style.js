@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Paragraph } from '../../assets/styles/typography';
+
 export const Section = styled.section`
   background-color: #fff;
 `;
@@ -98,8 +100,14 @@ export const FeaturedList = styled.ul`
 export const FeaturedListItem = styled.li`
   margin-bottom: 10px;
 
-  > * {
+  svg,
+  ${Paragraph} {
     display: inline-block;
+  }
+
+  ${Paragraph} {
+    top: -3px;
+    position: relative;
   }
 `;
 
