@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import Menu from '../../assets/img/hero/menu.svg';
 import { SolidButton } from '../../assets/styles/buttons';
-import { Link } from '../../assets/styles/typography';
-import { Nav, MenuItems, HamburgerMenu } from './style';
+import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 import LightLogo from '../../assets/img/hero/light-logo.png';
 import DarkLogo from '../../assets/img/hero/dark-logo.png';
 
@@ -43,23 +42,56 @@ function Navbar() {
         <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
-          <Link href="#home" color="inherit" fontSize="14px">
+          <ScrollLink hashSpy to="home" smooth color="inherit" fontSize="14px">
             HOME
-          </Link>
-          <Link href="#about" color="inherit" fontSize="14px">
+          </ScrollLink>
+          <ScrollLink
+            hashSpy
+            to="about"
+            smooth
+            activeClass="activeLink"
+            spy
+            color="inherit"
+            fontSize="14px"
+          >
             ABOUT
-          </Link>
-          <Link href="#platform" color="inherit" fontSize="14px">
+          </ScrollLink>
+          <ScrollLink
+            hashSpy
+            to="platform"
+            smooth
+            activeClass="activeLink"
+            spy
+            color="inherit"
+            fontSize="14px"
+          >
             PLATFORM
-          </Link>
-          <Link href="#team" color="inherit" fontSize="14px">
+          </ScrollLink>
+          <ScrollLink
+            hashSpy
+            to="team"
+            smooth
+            activeClass="activeLink"
+            spy
+            color="inherit"
+            fontSize="14px"
+          >
             TEAM
-          </Link>
-          <Link href="#contact" color="inherit" fontSize="14px">
+          </ScrollLink>
+          <ScrollLink
+            hashSpy
+            to="contact"
+            smooth
+            activeClass="activeLink"
+            spy
+            offset="50"
+            color="inherit"
+            fontSize="14px"
+          >
             CONTACT
-          </Link>
+          </ScrollLink>
         </MenuItems>
-        {/* <SolidButton color="#5945e6" backgroundColor="#fff" border={scrollStarted}> */}
+
         <SolidButton
           className="hire-us"
           color={!scrollStarted ? '#5945e6' : '#fff'}

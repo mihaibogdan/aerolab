@@ -1,10 +1,48 @@
 import styled from 'styled-components';
 
-import { Link } from '../../assets/styles/typography';
+import { Link } from 'react-scroll';
+
+export const ScrollLink = styled(Link)`
+  color: #4fce5d;
+  ${(props) => props.color && `color: ${props.color};`}
+  font-size: 15px;
+  ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
+  font-weight: 500;
+  ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
+  margin: 0;
+  ${(props) => props.margin && `margin: ${props.margin}`}
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  &.activeLink {
+    opacity: 0.5;
+  }
+`;
 
 export const MenuItems = styled.div`
   margin: 0 auto;
-  ${Link} {
+  ${ScrollLink} {
     margin: 0px 26px;
   }
 
@@ -75,7 +113,7 @@ export const Nav = styled.nav`
       margin-top: 4px;
       order: 3;
 
-      ${Link} {
+      ${ScrollLink} {
         margin: 10px 14px;
         color: #000;
       }

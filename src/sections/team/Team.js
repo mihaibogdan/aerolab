@@ -1,6 +1,7 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
+import { Element } from 'react-scroll';
 
 import { Heading2, Paragraph } from '../../assets/styles/typography';
 import Avatar1 from '../../assets/img/team/avatar1.png';
@@ -38,83 +39,85 @@ function Team() {
   };
   return (
     <>
-      <Section id="team">
-        <Container>
-          <CenteredTitle>
-            <Heading2 color="#fff">Our experience experts</Heading2>
-          </CenteredTitle>
-          <Paragraph textAlign="center" margin="15px 0px 60px 0px">
-            We’ll help you achieve your marketing & business goals
-          </Paragraph>
+      <Element name="team">
+        <Section id="team">
+          <Container>
+            <CenteredTitle>
+              <Heading2 color="#fff">Our experience experts</Heading2>
+            </CenteredTitle>
+            <Paragraph textAlign="center" margin="15px 0px 60px 0px">
+              We’ll help you achieve your marketing & business goals
+            </Paragraph>
 
-          <Swiper {...params}>
-            <TeamCard
-              cardAvatar={Avatar1}
-              cardTitle="Chad Brewer"
-              cardSubtitle="Director"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar2}
-              cardTitle="Eric Smith"
-              cardSubtitle="CEO Founder"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar3}
-              cardTitle="Erik Murray"
-              cardSubtitle="Founder"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar4}
-              cardTitle="Cynthia Casey"
-              cardSubtitle="Designer"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar1}
-              cardTitle="Chad Brewer"
-              cardSubtitle="Director"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar2}
-              cardTitle="Chad Brewer"
-              cardSubtitle="Director"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar3}
-              cardTitle="Eric Smith"
-              cardSubtitle="CEO Founder"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-            <TeamCard
-              cardAvatar={Avatar4}
-              cardTitle="Erik Murray"
-              cardSubtitle="Founder"
-              facebook="#"
-              twitter="#"
-              instagram="#"
-            />
-          </Swiper>
-        </Container>
-      </Section>
+            <Swiper {...params}>
+              <TeamCard
+                cardAvatar={Avatar1}
+                cardTitle="Chad Brewer"
+                cardSubtitle="Director"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar2}
+                cardTitle="Eric Smith"
+                cardSubtitle="CEO Founder"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar3}
+                cardTitle="Erik Murray"
+                cardSubtitle="Founder"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar4}
+                cardTitle="Cynthia Casey"
+                cardSubtitle="Designer"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar1}
+                cardTitle="Chad Brewer"
+                cardSubtitle="Director"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar2}
+                cardTitle="Chad Brewer"
+                cardSubtitle="Director"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar3}
+                cardTitle="Eric Smith"
+                cardSubtitle="CEO Founder"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+              <TeamCard
+                cardAvatar={Avatar4}
+                cardTitle="Erik Murray"
+                cardSubtitle="Founder"
+                facebook="#"
+                twitter="#"
+                instagram="#"
+              />
+            </Swiper>
+          </Container>
+        </Section>
+      </Element>
     </>
   );
 }

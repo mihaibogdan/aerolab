@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 import { Heading2, Heading4, Paragraph } from '../../assets/styles/typography';
 import { SolidButton } from '../../assets/styles/buttons';
@@ -24,43 +25,50 @@ import Card from '../../components/card';
 function Platform() {
   return (
     <>
-      <Section id="platform">
-        <Container>
-          <CenteredTitle>
-            <Heading2>Present over 50 platforms</Heading2>
-          </CenteredTitle>
+      <Element name="platform">
+        <Section id="platform">
+          <Container>
+            <CenteredTitle>
+              <Heading2>Present over 50 platforms</Heading2>
+            </CenteredTitle>
 
-          <Paragraph color="#7e7e7e" textAlign="center">
-            We are present over a wide range of social media
-          </Paragraph>
+            <Paragraph color="#7e7e7e" textAlign="center">
+              We are present over a wide range of social media
+            </Paragraph>
 
-          <CardGrid>
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<ReactLogo />}
-              cardTitle="React Native"
-            />
-            <Card small className="platformCard" cardIcon={<MicrosoftLogo />} cardTitle="Windows" />
-            <Card small className="platformCard" cardIcon={<AppleLogo />} cardTitle="MacOS" />
-            <Card small className="platformCard" cardIcon={<JavaLogo />} cardTitle="Java" />
-            <Card small className="platformCard" cardIcon={<AndroidLogo />} cardTitle="Android" />
-            <Card small className="platformCard" cardIcon={<PHPLogo />} cardTitle="PHP" />
-          </CardGrid>
+            <CardGrid>
+              <Card
+                small
+                className="platformCard"
+                cardIcon={<ReactLogo />}
+                cardTitle="React Native"
+              />
+              <Card
+                small
+                className="platformCard"
+                cardIcon={<MicrosoftLogo />}
+                cardTitle="Windows"
+              />
+              <Card small className="platformCard" cardIcon={<AppleLogo />} cardTitle="MacOS" />
+              <Card small className="platformCard" cardIcon={<JavaLogo />} cardTitle="Java" />
+              <Card small className="platformCard" cardIcon={<AndroidLogo />} cardTitle="Android" />
+              <Card small className="platformCard" cardIcon={<PHPLogo />} cardTitle="PHP" />
+            </CardGrid>
 
-          <DownloadSection>
-            <DownloadCard>
-              <Heading4>Free download of our app now</Heading4>
-              <Paragraph margin="0px 0px 20px 0px">
-                Offer your business with the best assistance for growth.
-              </Paragraph>
-              <SolidButton>Get AeroLand</SolidButton>
-            </DownloadCard>
+            <DownloadSection>
+              <DownloadCard>
+                <Heading4>Free download of our app now</Heading4>
+                <Paragraph margin="0px 0px 20px 0px">
+                  Offer your business with the best assistance for growth.
+                </Paragraph>
+                <SolidButton>Get AeroLand</SolidButton>
+              </DownloadCard>
 
-            <MacbookImage src={MackbookDownload} />
-          </DownloadSection>
-        </Container>
-      </Section>
+              <MacbookImage src={MackbookDownload} />
+            </DownloadSection>
+          </Container>
+        </Section>
+      </Element>
     </>
   );
 }
