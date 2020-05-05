@@ -96,8 +96,11 @@ export const FeaturedList = styled.ul`
 `;
 
 export const FeaturedListItem = styled.li`
-  display: flex;
   margin-bottom: 10px;
+
+  > * {
+    display: inline-block;
+  }
 `;
 
 export const LearnMoreRow = styled.div`
