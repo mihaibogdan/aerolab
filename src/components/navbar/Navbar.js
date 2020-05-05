@@ -84,7 +84,6 @@ function Navbar() {
             smooth
             activeClass="activeLink"
             spy
-            offset="50"
             color="inherit"
             fontSize="14px"
           >

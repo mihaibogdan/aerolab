@@ -14,11 +14,19 @@ function Contact() {
         <Section id="contact">
           <Container>
             <LeftSection>
-              <Heading2>Let’s cooperate!</Heading2>
-              <Paragraph color="#7e7e7e" margin="0px 0px 60px 0px">
+              <Heading2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                Let’s cooperate!
+              </Heading2>
+              <Paragraph
+                color="#7e7e7e"
+                margin="0px 0px 60px 0px"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="150"
+              >
                 Let’s become partners to build a better future for today.
               </Paragraph>
-              <form>
+              <form data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <Input type="text" placeholder="Name *" name="name" width="calc(50% - 20px)" />
                 <Input
                   type="email"
@@ -31,11 +39,13 @@ function Contact() {
 
                 <TextArea placeholder="Message *" />
 
-                <GradientButton>Send Message</GradientButton>
+                <GradientButton data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                  Send Message
+                </GradientButton>
               </form>
             </LeftSection>
 
-            <RightSection>
+            <RightSection data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
               <Image src={ContactImage} />
             </RightSection>
           </Container>

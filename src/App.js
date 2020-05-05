@@ -1,5 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import GlobalStyle from './assets/styles/globalStyles';
 import Navbar from './components/navbar';
@@ -13,6 +15,10 @@ import Clients from './sections/clients';
 import Contact from './sections/contact';
 import Seo from './sections/seo';
 import Footer from './sections/footer';
+
+AOS.init({
+  // once: true,
+});
 
 function App() {
   return (

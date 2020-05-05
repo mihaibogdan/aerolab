@@ -28,15 +28,21 @@ function Platform() {
       <Element name="platform">
         <Section id="platform">
           <Container>
-            <CenteredTitle>
+            <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
               <Heading2>Present over 50 platforms</Heading2>
             </CenteredTitle>
 
-            <Paragraph color="#7e7e7e" textAlign="center">
+            <Paragraph
+              color="#7e7e7e"
+              textAlign="center"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="150"
+            >
               We are present over a wide range of social media
             </Paragraph>
 
-            <CardGrid>
+            <CardGrid data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
               <Card
                 small
                 className="platformCard"
@@ -55,16 +61,30 @@ function Platform() {
               <Card small className="platformCard" cardIcon={<PHPLogo />} cardTitle="PHP" />
             </CardGrid>
 
-            <DownloadSection>
+            <DownloadSection data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
               <DownloadCard>
-                <Heading4>Free download of our app now</Heading4>
-                <Paragraph margin="0px 0px 20px 0px">
+                <Heading4 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                  Free download of our app now
+                </Heading4>
+                <Paragraph
+                  margin="0px 0px 20px 0px"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="350"
+                >
                   Offer your business with the best assistance for growth.
                 </Paragraph>
-                <SolidButton>Get AeroLand</SolidButton>
+                <SolidButton data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                  Get AeroLand
+                </SolidButton>
               </DownloadCard>
 
-              <MacbookImage src={MackbookDownload} />
+              <MacbookImage
+                src={MackbookDownload}
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              />
             </DownloadSection>
           </Container>
         </Section>

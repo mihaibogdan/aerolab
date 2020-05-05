@@ -41,21 +41,70 @@ function Clients() {
     <>
       <Section id="clients">
         <Container>
-          <CenteredTitle>
+          <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <Heading2>A reliable top-rated company</Heading2>
           </CenteredTitle>
-          <Paragraph color="#7e7e7e" textAlign="center" margin="15px 0px 45px 0px">
+          <Paragraph
+            color="#7e7e7e"
+            textAlign="center"
+            margin="15px 0px 45px 0px"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="150"
+          >
             We deliver the best services for app design and coding
           </Paragraph>
 
           <Swiper {...params}>
-            <img src={Firefox} alt="" />
-            <img src={Bullfit} alt="" />
-            <img src={Adroll} alt="" />
-            <img src={Eventbrite} alt="" />
-            <img src={Aqua} alt="" />
-            <img src={Pencil} alt="" />
-            <img src={Sixbase} alt="" />
+            <img
+              src={Firefox}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="200"
+            />
+            <img
+              src={Bullfit}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="250"
+            />
+            <img
+              src={Adroll}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            />
+            <img
+              src={Eventbrite}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="350"
+            />
+            <img
+              src={Aqua}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="400"
+            />
+            <img
+              src={Pencil}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="450"
+            />
+            <img
+              src={Sixbase}
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="500"
+            />
           </Swiper>
         </Container>
       </Section>

@@ -37,7 +37,7 @@ function Product() {
     <>
       <Section id="product">
         <Container>
-          <CenteredTitle>
+          <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <Heading2>Developed for Business Growth</Heading2>
           </CenteredTitle>
 
@@ -46,6 +46,9 @@ function Product() {
             color="#7e7e7e"
             textAlign="center"
             margin="15px 0 0 0"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="150"
           >
             Offer your business with the best assistance for growth.
           </Paragraph>
@@ -59,10 +62,13 @@ function Product() {
                   description={feature.description}
                   className={`feature ${activeFeature === index ? 'active' : ''}`}
                   onClick={() => setActiveFeature(index)}
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay={200 + 50 * index}
                 />
               ))}
             </Column>
-            <Column>
+            <Column data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
               <TransitionGroup>
                 {features.map((feature, index) =>
                   index === activeFeature ? (

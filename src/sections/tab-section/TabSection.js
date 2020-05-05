@@ -32,43 +32,85 @@ const tabs = [
   {
     name: 'Featured',
     content: (
-      <TabContent className="active-tab">
+      <TabContent
+        className="active-tab"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="300"
+      >
         <LeftSection>
           <TabImage src={FeaturedImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
-            <Paragraph color="#7e7e7e">
+            <Paragraph
+              color="#7e7e7e"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            >
               Meeting all of your requirements for SEO & branding
             </Paragraph>
             <FeaturedList>
-              <FeaturedListItem>
+              <FeaturedListItem
+                color="#7e7e7e"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
                 <CheckList width="16px" color="#4fce5d" />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Receive real-time business analytics
                 </Paragraph>
               </FeaturedListItem>
-              <FeaturedListItem>
+              <FeaturedListItem
+                color="#7e7e7e"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
                 <CheckList width="16px" color="#4fce5d" />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Cross-browser Compatible Design
                 </Paragraph>
               </FeaturedListItem>
-              <FeaturedListItem>
+              <FeaturedListItem
+                color="#7e7e7e"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
                 <CheckList width="16px" color="#4fce5d" />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Completely Gutenberg Ready
                 </Paragraph>
               </FeaturedListItem>
-              <FeaturedListItem>
+              <FeaturedListItem
+                color="#7e7e7e"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
                 <CheckList width="16px" color="#4fce5d" />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Highly Responsive Tools
                 </Paragraph>
               </FeaturedListItem>
             </FeaturedList>
-            <GradientButton>Learn mode</GradientButton>
-            <LearnMoreRow>
+            <GradientButton
+              color="#7e7e7e"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="350"
+            >
+              Learn mode
+            </GradientButton>
+            <LearnMoreRow
+              color="#7e7e7e"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="400"
+            >
               <Heading6>What’s next in AeroLand?</Heading6>
               <Link href="www.google.com" fontSize="18px" margin="0px 0px 0px 5px">
                 Learn more
@@ -82,21 +124,35 @@ const tabs = [
   {
     name: 'Mission',
     content: (
-      <TabContent>
+      <TabContent data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <LeftSection>
           <TabImage src={MissionImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
-            <Heading4 color="#2e3280" fontWeight="400">
+            <Heading4
+              color="#2e3280"
+              fontWeight="400"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            >
               The best ways to create websites
             </Heading4>
-            <Paragraph color="#7e7e7e" margin="40px 0px">
+            <Paragraph
+              color="#7e7e7e"
+              margin="40px 0px"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="340"
+            >
               We bring on like-minded and talented members to help you grow a stronger business for
               fiercely reaching towards higher goals every day.
             </Paragraph>
-            <GradientButton>Learn mode</GradientButton>
-            <LearnMoreRow>
+            <GradientButton data-aos="fade-up" data-aos-duration="600" data-aos-delay="340">
+              Learn mode
+            </GradientButton>
+            <LearnMoreRow data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
               <Heading6>What’s next in AeroLand?</Heading6>
               <Link href="www.google.com" fontSize="18px" margin="0px 0px 0px 5px">
                 Learn more
@@ -110,13 +166,13 @@ const tabs = [
   {
     name: 'New Friendly Support',
     content: (
-      <TabContent>
+      <TabContent data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <LeftSection>
           <TabImage src={SupportImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
-            <SupportCard>
+            <SupportCard data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
               <CardImage src={HotlineImage} alt="" />
               <CardContent>
                 <Heading6 color="#ababab" textAlign="left">
@@ -131,7 +187,7 @@ const tabs = [
               </CardContent>
             </SupportCard>
 
-            <SupportCard>
+            <SupportCard data-aos="fade-up" data-aos-duration="600" data-aos-delay="360">
               <CardImage src={EmailImage} alt="" />
               <CardContent>
                 <Heading6 color="#ababab" textAlign="left">
@@ -158,13 +214,13 @@ function TabSection() {
     <>
       <Section>
         <Container>
-          <CenteredTitle>
+          <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <Heading2>
               We design powerful websites for <br /> landing your success.
             </Heading2>
           </CenteredTitle>
 
-          <TabList>
+          <TabList data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             {tabs.map((tab, index) => (
               <Tab
                 key={tab.name}

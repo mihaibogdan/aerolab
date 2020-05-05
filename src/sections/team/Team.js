@@ -42,10 +42,16 @@ function Team() {
       <Element name="team">
         <Section id="team">
           <Container>
-            <CenteredTitle>
+            <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
               <Heading2 color="#fff">Our experience experts</Heading2>
             </CenteredTitle>
-            <Paragraph textAlign="center" margin="15px 0px 60px 0px">
+            <Paragraph
+              textAlign="center"
+              margin="15px 0px 60px 0px"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="150"
+            >
               We’ll help you achieve your marketing & business goals
             </Paragraph>
 
@@ -57,6 +63,9 @@ function Team() {
                 facebook="#"
                 twitter="#"
                 instagram="#"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
               />
               <TeamCard
                 cardAvatar={Avatar2}
@@ -65,6 +74,9 @@ function Team() {
                 facebook="#"
                 twitter="#"
                 instagram="#"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="250"
               />
               <TeamCard
                 cardAvatar={Avatar3}
@@ -73,6 +85,9 @@ function Team() {
                 facebook="#"
                 twitter="#"
                 instagram="#"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
               />
               <TeamCard
                 cardAvatar={Avatar4}
@@ -81,6 +96,9 @@ function Team() {
                 facebook="#"
                 twitter="#"
                 instagram="#"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="350"
               />
               <TeamCard
                 cardAvatar={Avatar1}

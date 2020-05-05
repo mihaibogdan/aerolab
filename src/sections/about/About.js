@@ -30,7 +30,7 @@ function About() {
       <Element name="about">
         <Section id="about">
           <Container>
-            <CenteredTitle>
+            <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
               <Heading2>
                 We’ve created enticing designs for <br /> startups and new businesses
               </Heading2>
@@ -41,6 +41,9 @@ function About() {
                 setShowVideo(true);
                 document.body.classList.add('video-open');
               }}
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="200"
             >
               <PlayCircle />
               <span className="videoButtonText">Intro & Demo Video</span>
@@ -52,18 +55,27 @@ function About() {
                 cardIcon={<img src={BoxIcon1} alt="" />}
                 cardTitle="Web Development"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
               />
               <Card
                 className="aboutCard"
                 cardIcon={<img src={BoxIcon2} alt="" />}
                 cardTitle="Social Media"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
               />
               <Card
                 className="aboutCard"
                 cardIcon={<img src={BoxIcon3} alt="" />}
                 cardTitle="SEO Marketing"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
               />
 
               <Card
@@ -71,18 +83,27 @@ function About() {
                 cardIcon={<img src={BoxIcon4} alt="" />}
                 cardTitle="Keywords Search"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="400"
               />
               <Card
                 className="aboutCard"
                 cardIcon={<img src={BoxIcon5} alt="" />}
                 cardTitle="Email optimization"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="400"
               />
               <Card
                 className="aboutCard"
                 cardIcon={<img src={BoxIcon6} alt="" />}
                 cardTitle="Web Design"
                 cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="400"
               />
             </CardGrid>
           </Container>
