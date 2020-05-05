@@ -2,6 +2,8 @@ import React from 'react';
 
 import { SolidButton } from '../../assets/styles/buttons';
 import { Heading1, Paragraph, Link } from '../../assets/styles/typography';
+import StartupThumb from '../../assets/img/hero/startup-thumb.png';
+
 import {
   HeroSection,
   LeftSection,
@@ -36,7 +38,7 @@ function Home() {
         </LeftSection>
 
         <RightSection>
-          <Image src="src/assets/img/hero/startup-thumb.png" />
+          <Image src={StartupThumb} />
         </RightSection>
 
         <WaveAnimation

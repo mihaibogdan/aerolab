@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Heading2, Paragraph } from '../../assets/styles/typography';
 import { GradientButton } from '../../assets/styles/buttons';
+import ContactImage from '../../assets/img/contact/contact-image.png';
 
 import { Section, Container, LeftSection, RightSection, Image, Input, TextArea } from './style';
 
@@ -33,7 +34,7 @@ function Contact() {
           </LeftSection>
 
           <RightSection>
-            <Image src="src/assets/img/contact/contact-image.png" />
+            <Image src={ContactImage} />
           </RightSection>
         </Container>
       </Section>

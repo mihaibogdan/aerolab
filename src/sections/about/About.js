@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
 import { Heading2 } from '../../assets/styles/typography';
+import BoxIcon1 from '../../assets/img/about/box-icon1.png';
+import BoxIcon2 from '../../assets/img/about/box-icon2.png';
+import BoxIcon3 from '../../assets/img/about/box-icon3.png';
+import BoxIcon4 from '../../assets/img/about/box-icon4.png';
+import BoxIcon5 from '../../assets/img/about/box-icon5.png';
+import BoxIcon6 from '../../assets/img/about/box-icon6.png';
+import PlayCircle from '../../assets/img/about/play-circle.svg';
+
 import { Section, Container, CenteredTitle, CardGrid, VideoButton } from './style';
 import Card from '../../components/card';
 import VideoOverlay from '../../components/videoOverlay';
@@ -31,45 +39,45 @@ function About() {
               document.body.classList.add('video-open');
             }}
           >
-            <img src="src/assets/img/about/play-circle.svg" alt="" />
+            <PlayCircle />
             <span className="videoButtonText">Intro & Demo Video</span>
           </VideoButton>
 
           <CardGrid>
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon1.png" alt="" />}
+              cardIcon={<img src={BoxIcon1} alt="" />}
               cardTitle="Web Development"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon2.png" alt="" />}
+              cardIcon={<img src={BoxIcon2} alt="" />}
               cardTitle="Social Media"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon3.png" alt="" />}
+              cardIcon={<img src={BoxIcon3} alt="" />}
               cardTitle="SEO Marketing"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
 
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon4.png" alt="" />}
+              cardIcon={<img src={BoxIcon4} alt="" />}
               cardTitle="Keywords Search"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon5.png" alt="" />}
+              cardIcon={<img src={BoxIcon5} alt="" />}
               cardTitle="Email optimization"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />
             <Card
               className="aboutCard"
-              cardIcon={<img src="src/assets/img/about/box-icon6.png" alt="" />}
+              cardIcon={<img src={BoxIcon6} alt="" />}
               cardTitle="Web Design"
               cardParagraph="Consider this app a platform for connecting people from everywhere based on their preferences."
             />

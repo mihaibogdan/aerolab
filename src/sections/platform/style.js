@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import DownloadSectionBackground from '../../assets/img/platform/download-section-bg.png';
+
 export const Section = styled.section`
   background-color: #fff;
 `;
@@ -47,7 +49,7 @@ export const CardGrid = styled.div`
 export const DownloadSection = styled.div`
   margin: 80px 0px;
   position: relative;
-  background: url(src/assets/img/platform/download-section-bg.png) 55% 100%,
+  background: url(${DownloadSectionBackground}) 55% 100%,
     linear-gradient(-138deg, #5e60e7, #9c7af2 50%, #5e60e7);
   background-repeat: no-repeat;
   border-radius: 5px;

@@ -2,6 +2,13 @@ import React from 'react';
 
 import { Heading2, Heading4, Paragraph } from '../../assets/styles/typography';
 import { SolidButton } from '../../assets/styles/buttons';
+import ReactLogo from '../../assets/img/platform/react.svg';
+import MicrosoftLogo from '../../assets/img/platform/microsoft.svg';
+import AppleLogo from '../../assets/img/platform/apple.svg';
+import JavaLogo from '../../assets/img/platform/java.svg';
+import AndroidLogo from '../../assets/img/platform/android.svg';
+import PHPLogo from '../../assets/img/platform/php.svg';
+import MackbookDownload from '../../assets/img/platform/macbook-download.png';
 
 import {
   Section,
@@ -31,40 +38,14 @@ function Platform() {
             <Card
               small
               className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/react.svg" alt="" />}
+              cardIcon={<ReactLogo />}
               cardTitle="React Native"
             />
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/microsoft.svg" alt="" />}
-              cardTitle="Windows"
-            />
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/apple.svg" alt="" />}
-              cardTitle="MacOS"
-            />
-
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/java.svg" alt="" />}
-              cardTitle="Java"
-            />
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/android.svg" alt="" />}
-              cardTitle="Android"
-            />
-            <Card
-              small
-              className="platformCard"
-              cardIcon={<img src="src/assets/img/platform/php.svg" alt="" />}
-              cardTitle="PHP"
-            />
+            <Card small className="platformCard" cardIcon={<MicrosoftLogo />} cardTitle="Windows" />
+            <Card small className="platformCard" cardIcon={<AppleLogo />} cardTitle="MacOS" />
+            <Card small className="platformCard" cardIcon={<JavaLogo />} cardTitle="Java" />
+            <Card small className="platformCard" cardIcon={<AndroidLogo />} cardTitle="Android" />
+            <Card small className="platformCard" cardIcon={<PHPLogo />} cardTitle="PHP" />
           </CardGrid>
 
           <DownloadSection>
@@ -76,7 +57,7 @@ function Platform() {
               <SolidButton>Get AeroLand</SolidButton>
             </DownloadCard>
 
-            <MacbookImage src="src/assets/img/platform/macbook-download.png" />
+            <MacbookImage src={MackbookDownload} />
           </DownloadSection>
         </Container>
       </Section>

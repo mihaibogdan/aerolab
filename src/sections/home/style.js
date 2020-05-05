@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
+import HeroBackground from '../../assets/img/hero/startup-bg.jpg';
+
 const moveLeft = keyframes`
   from {
     left: 0%
@@ -13,7 +15,7 @@ const moveLeft = keyframes`
 export const HeroSection = styled.section`
   min-height: 100vh;
   background: linear-gradient(-259deg, #5e60e7, #9c7af2 65%);
-  background: url('src/assets/img/hero/startup-bg.jpg');
+  background: url(${HeroBackground});
   background-repeat: none;
   background-size: cover;
   background-position: center;

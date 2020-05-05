@@ -4,6 +4,8 @@ import Menu from '../../assets/img/hero/menu.svg';
 import { SolidButton } from '../../assets/styles/buttons';
 import { Link } from '../../assets/styles/typography';
 import { Nav, MenuItems, HamburgerMenu } from './style';
+import LightLogo from '../../assets/img/hero/light-logo.png';
+import DarkLogo from '../../assets/img/hero/dark-logo.png';
 
 function Navbar() {
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
@@ -38,14 +40,7 @@ function Navbar() {
   return (
     <>
       <Nav className={`${scrollStarted ? 'scrolledNavbar' : ''}`}>
-        <img
-          src={
-            !scrollStarted
-              ? 'src/assets/img/hero/light-logo.png'
-              : 'src/assets/img/hero/dark-logo.png'
-          }
-          alt=""
-        />
+        <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
           <Link href="#home" color="inherit" fontSize="14px">

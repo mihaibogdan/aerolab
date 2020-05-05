@@ -21,8 +21,12 @@ import {
   TabList,
   Tab,
 } from './style';
-
 import CheckList from '../../assets/img/tab-section/check.svg';
+import FeaturedImage from '../../assets/img/tab-section/featured-image.png';
+import MissionImage from '../../assets/img/tab-section/mission-image.png';
+import SupportImage from '../../assets/img/tab-section/support-image.png';
+import HotlineImage from '../../assets/img/tab-section/hotline.png';
+import EmailImage from '../../assets/img/tab-section/email.png';
 
 const tabs = [
   {
@@ -30,7 +34,7 @@ const tabs = [
     content: (
       <TabContent className="active-tab">
         <LeftSection>
-          <TabImage src="src/assets/img/tab-section/featured-image.png" alt="" />
+          <TabImage src={FeaturedImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
@@ -80,7 +84,7 @@ const tabs = [
     content: (
       <TabContent>
         <LeftSection>
-          <TabImage src="src/assets/img/tab-section/mission-image.png" alt="" />
+          <TabImage src={MissionImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
@@ -108,12 +112,12 @@ const tabs = [
     content: (
       <TabContent>
         <LeftSection>
-          <TabImage src="src/assets/img/tab-section/support-image.png" alt="" />
+          <TabImage src={SupportImage} alt="" />
         </LeftSection>
         <RightSection>
           <CenteredContent>
             <SupportCard>
-              <CardImage src="src/assets/img/tab-section/hotline.png" alt="" />
+              <CardImage src={HotlineImage} alt="" />
               <CardContent>
                 <Heading6 color="#ababab" textAlign="left">
                   HOTLINE
@@ -128,7 +132,7 @@ const tabs = [
             </SupportCard>
 
             <SupportCard>
-              <CardImage src="src/assets/img/tab-section/email.png" alt="" />
+              <CardImage src={EmailImage} alt="" />
               <CardContent>
                 <Heading6 color="#ababab" textAlign="left">
                   GIVE YOUR FEEDBACK

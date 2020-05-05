@@ -26,7 +26,7 @@ function VideoOverlay({ onClose }) {
 }
 
 VideoOverlay.propTypes = {
-  onClose: PropTypes.bool,
+  onClose: PropTypes.func,
 };
 
 export default VideoOverlay;
