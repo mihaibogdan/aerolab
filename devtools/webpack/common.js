@@ -12,6 +12,7 @@ const options = {
   output: {
     filename: '[name].js',
     publicPath: '/',
+    path: path.join(__dirname, '../../public'),
   },
   optimization: {
     runtimeChunk: 'single',
