@@ -11,6 +11,10 @@ export const FeatureWrapper = styled.div`
     margin: 0;
     margin-left: 30px;
     max-width: 185px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 26px;
+    }
   }
 
   ${Paragraph} {
