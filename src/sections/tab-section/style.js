@@ -78,7 +78,9 @@ export const RightSection = styled.div`
   }
 `;
 
-export const TabImage = styled.img``;
+export const TabImage = styled.img`
+  max-width: 100%;
+`;
 
 export const CenteredContent = styled.div``;
 
