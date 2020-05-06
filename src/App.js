@@ -18,6 +18,7 @@ import Footer from './sections/footer';
 
 AOS.init({
   once: true,
+  offset: 0,
 });
 
 function App() {
