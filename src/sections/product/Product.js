@@ -54,7 +54,7 @@ function Product() {
           </Paragraph>
 
           <FeaturesGrid>
-            <Column>
+            <Column data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
               {features.map((feature, index) => (
                 <Feature
                   name={feature.name}
@@ -62,9 +62,6 @@ function Product() {
                   description={feature.description}
                   className={`feature ${activeFeature === index ? 'active' : ''}`}
                   onClick={() => setActiveFeature(index)}
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-delay={200 + 50 * index}
                 />
               ))}
             </Column>
