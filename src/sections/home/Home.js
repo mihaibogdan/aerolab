@@ -36,7 +36,9 @@ function Home() {
                   <Paragraph margin="0px 5px 0px 20px" fontWeight="500">
                     Questions?
                   </Paragraph>
-                  <Link href="https://google.com">Talk to our team</Link>
+                  <Link target="_blank" href="https://wa.me/491702988400?text=Hi%20there!">
+                    Talk to our team
+                  </Link>
                 </QuestionsText>
               </CTARow>
             </TextBlock>
