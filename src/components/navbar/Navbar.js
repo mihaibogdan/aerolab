@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { withTheme } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Menu from '../../assets/img/hero/menu.svg';
 import { SolidButton } from '../../assets/styles/buttons';
@@ -6,7 +8,7 @@ import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 import LightLogo from '../../assets/img/hero/light-logo.png';
 import DarkLogo from '../../assets/img/hero/dark-logo.png';
 
-function Navbar() {
+function Navbar({ theme }) {
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
   const [heightMenu, setHeightMenu] = useState(0);
   const menuItemsEl = useRef(null);
@@ -93,8 +95,10 @@ function Navbar() {
 
         <SolidButton
           className="hire-us"
-          color={!scrollStarted ? '#5945e6' : '#fff'}
-          backgroundColor={!scrollStarted ? '#fff' : '#5945e6'}
+          color={!scrollStarted ? theme.palette.primary.default : theme.palette.neutral.white}
+          backgroundColor={
+            !scrollStarted ? theme.palette.neutral.white : theme.palette.primary.default
+          }
         >
           Hire Us Now
         </SolidButton>
@@ -103,11 +107,15 @@ function Navbar() {
           className="hamburger-menu"
           onClick={() => setHeightMenu(heightMenu ? 0 : calcHeight())}
         >
-          <Menu color="#5945e6" width="20px" />
+          <Menu color={theme.palette.primary.default} width="20px" />
         </HamburgerMenu>
       </Nav>
     </>
   );
 }
 
-export default Navbar;
+Navbar.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(Navbar);

@@ -1,4 +1,6 @@
 import React from 'react';
+import { withTheme } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { Heading2, Paragraph } from '../../assets/styles/typography';
 import { Section, Container, CenteredTitle, Stores } from './style';
@@ -6,13 +8,15 @@ import { Section, Container, CenteredTitle, Stores } from './style';
 import PlayStore from '../../assets/img/contact/play-store.png';
 import AppStore from '../../assets/img/contact/app-store.png';
 
-function Seo() {
+function Seo({ theme }) {
   return (
     <>
       <Section id="seo">
         <Container>
           <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <Heading2 color="#fff">SEO marketing app on your mobile!</Heading2>
+            <Heading2 color={theme.palette.neutral.white}>
+              SEO marketing app on your mobile!
+            </Heading2>
           </CenteredTitle>
           <Paragraph
             textAlign="center"
@@ -38,4 +42,8 @@ function Seo() {
   );
 }
 
-export default Seo;
+Seo.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(Seo);

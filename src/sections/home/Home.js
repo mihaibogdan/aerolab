@@ -1,5 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import { withTheme } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { SolidButton } from '../../assets/styles/buttons';
 import { Heading1, Paragraph, Link } from '../../assets/styles/typography';
@@ -16,7 +18,7 @@ import {
   WaveAnimation,
 } from './style';
 
-function Home() {
+function Home({ theme }) {
   return (
     <>
       <Element name="home">
@@ -59,7 +61,7 @@ function Home() {
           >
             <path
               style={{
-                fill: '#ffffff',
+                fill: theme.palette.neutral.white,
                 strokeMiterlimit: '10',
               }}
               d="M3360.5,97.739c-242,0-480-48.375-480-48.375
@@ -73,4 +75,8 @@ function Home() {
   );
 }
 
-export default Home;
+Home.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(Home);

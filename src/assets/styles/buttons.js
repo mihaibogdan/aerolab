@@ -7,9 +7,9 @@ export const SolidButton = styled.button`
   font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color}`}
-  background-color: #4fce5d;
+  background-color: ${({ theme }) => theme.palette.accent};
   ${(props) => props.backgroundColor && `background-color: ${props.backgroundColor}`};
   border: none;
   ${(props) => props.border && 'border: 2px solid currentColor'};
@@ -33,7 +33,7 @@ export const GradientButton = styled.button`
   font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   background-image: linear-gradient(218deg, #5e61e7, #9c7af2 50%, #5e61e7);
   background-size: 200% auto;
   background-position: 0;

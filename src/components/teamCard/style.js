@@ -4,7 +4,7 @@ export const SliderCard = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   align-items: center;
   padding: 30px;
   min-height: 380px;
@@ -37,8 +37,8 @@ export const SocialIcon = styled.a`
   position: relative;
 
   ::after {
-    background-color: #5945e6;
-    color: #fff;
+    background-color: ${({ theme }) => theme.palette.primary.default};
+    color: ${({ theme }) => theme.palette.neutral.white};
     line-height: 1.2;
     content: attr(aria-label);
     position: absolute;
@@ -56,7 +56,7 @@ export const SocialIcon = styled.a`
     width: 0px;
     height: 0px;
     z-index: 1;
-    border: 6px solid #5945e6;
+    border: 6px solid ${({ theme }) => theme.palette.primary.default};
     border-left-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -69,9 +69,9 @@ export const SocialIcon = styled.a`
   }
 
   &:hover {
-    background-color: #5945e6;
-    border: 1px solid #5945e6;
-    color: #fff;
+    background-color: ${({ theme }) => theme.palette.primary.default};
+    border: 1px solid ${({ theme }) => theme.palette.primary.default};
+    color: ${({ theme }) => theme.palette.neutral.white};
     ::after,
     ::before {
       visibility: visible;

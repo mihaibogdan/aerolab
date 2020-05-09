@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Paragraph } from '../../assets/styles/typography';
 
 export const Section = styled.section`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
 `;
 
 export const Container = styled.div`
@@ -161,7 +161,7 @@ export const Tab = styled.button`
   letter-spacing: 1px;
   padding: 21px 20px 19px;
   margin: 0px 10px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   border: 1px solid #ededed;
   color: #696969;
   min-width: 200px;
@@ -173,8 +173,8 @@ export const Tab = styled.button`
   }
 
   &.active {
-    background-color: #7c82fe;
-    color: #fff;
+    background-color: ${({ theme }) => theme.palette.primary.light};
+    color: ${({ theme }) => theme.palette.neutral.white};
     border: 1px solid transparent;
 
     &:hover {

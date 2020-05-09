@@ -5,7 +5,7 @@ export const Heading1 = styled.h1`
   font-weight: 500;
   line-height: 1.2;
   margin: 0;
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color}`}
 
   @media screen and (max-width: 768px) {
@@ -19,7 +19,7 @@ export const Heading2 = styled.h2`
   line-height: 1.23;
   margin: 0;
   ${(props) => props.margin && `margin: ${props.margin}`}
-  color: #2e3280;
+  color: ${({ theme }) => theme.palette.primary.dark};
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
 
@@ -35,7 +35,7 @@ export const Heading4 = styled.h4`
   line-height: 1.23;
   margin: 0px 0px 20px 0px;
   ${(props) => props.margin && `margin: ${props.margin}`}
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color}`};
 
   @media screen and (max-width: 768px) {
@@ -75,7 +75,7 @@ export const Paragraph = styled.p`
   ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
   font-weight: 400;
   ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color};`}
   line-height: 1.8;
   margin: 0;
@@ -85,7 +85,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Link = styled.a`
-  color: #4fce5d;
+  color: ${({ theme }) => theme.palette.accent};
   ${(props) => props.color && `color: ${props.color};`}
   font-size: 15px;
   ${(props) => props.fontSize && `font-size: ${props.fontSize}`}

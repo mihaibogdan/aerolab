@@ -1,4 +1,6 @@
 import React from 'react';
+import { withTheme } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import {
   Section,
@@ -24,7 +26,7 @@ import TwitterIcon from '../../assets/img/team/twitter.svg';
 import InstagramIcon from '../../assets/img/team/instagram.svg';
 import LogoImg from '../../assets/img/hero/light-logo.png';
 
-function Footer() {
+function Footer({ theme }) {
   return (
     <Section id="footer">
       <Container>
@@ -39,14 +41,14 @@ function Footer() {
             <FooterLink href="http://google.com">Mobile app</FooterLink>
           </Column>
           <Column>
-            <Heading6 color="#fff">Who we are</Heading6>
+            <Heading6 color={theme.palette.neutral.white}>Who we are</Heading6>
             <FooterLink href="http://google.com">About us</FooterLink>
             <FooterLink href="http://google.com">Before you go</FooterLink>
             <FooterLink href="http://google.com">Online check in</FooterLink>
             <FooterLink href="http://google.com">FAQ</FooterLink>
           </Column>
           <Column>
-            <Heading6 color="#fff">Quick links</Heading6>
+            <Heading6 color={theme.palette.neutral.white}>Quick links</Heading6>
             <FooterLink href="http://google.com">Pick up locations</FooterLink>
             <FooterLink href="http://google.com">Terms of Payment</FooterLink>
             <FooterLink href="http://google.com">Privacy Policy</FooterLink>
@@ -62,7 +64,7 @@ function Footer() {
                 <TweetLink href="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
               </TweetBox>
               <TweetInfo>
-                <TwitterIcon width="18" color="#5945e6" />
+                <TwitterIcon width="18" color={theme.palette.primary.default} />
                 <Column>
                   <TweetUser>Unsplash</TweetUser>
                   <TweetDate>May 07, 2020</TweetDate>
@@ -98,4 +100,8 @@ function Footer() {
   );
 }
 
-export default Footer;
+Footer.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(Footer);

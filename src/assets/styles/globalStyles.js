@@ -39,8 +39,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    color: #fff;
-    background-color: #5945e6;
+    color: ${({ theme }) => theme.palette.neutral.white};
+    background-color: ${({ theme }) => theme.palette.primary.default};
 }
 `;
 

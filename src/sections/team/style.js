@@ -34,7 +34,7 @@ export const Container = styled.div`
   }
 
   .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    --swiper-pagination-color: #fff;
+    --swiper-pagination-color: ${({ theme }) => theme.palette.neutral.white};
     margin: 8px;
     display: inline-block;
     background-color: #d8d8d8;
@@ -45,7 +45,7 @@ export const Container = styled.div`
       width: 12px;
       height: 12px;
       margin: 6px;
-      background-color: #fff;
+      background-color: ${({ theme }) => theme.palette.neutral.white};
     }
   }
 
@@ -54,7 +54,7 @@ export const Container = styled.div`
     height: 16px;
     box-shadow: 0 0 9px #ededed;
     opacity: 1;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.palette.neutral.white};
     margin: 4px;
   }
 `;

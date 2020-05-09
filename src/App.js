@@ -1,8 +1,10 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import theme from './config/theme.config';
 import GlobalStyle from './assets/styles/globalStyles';
 import Navbar from './components/navbar';
 import Home from './sections/home';
@@ -31,7 +33,7 @@ document.addEventListener('aos:in', ({ detail }) => {
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
       <Home />
@@ -44,7 +46,7 @@ function App() {
       <Contact />
       <Seo />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

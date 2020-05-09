@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const ScrollLink = styled(Link)`
-  color: #4fce5d;
+  color: ${({ theme }) => theme.palette.accent};
   ${(props) => props.color && `color: ${props.color};`}
   font-size: 15px;
   ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
@@ -57,7 +57,7 @@ export const MenuItems = styled.div`
 
 export const HamburgerMenu = styled.button`
   padding: 8px 18px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   -webkit-appearance: none;
@@ -81,7 +81,7 @@ export const Nav = styled.nav`
   transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.scrolledNavbar {
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.palette.neutral.white};
     box-shadow: 0 18px 40px 5px rgba(51, 51, 51, 0.1);
     height: 80px;
     color: #000;
@@ -106,8 +106,8 @@ export const Nav = styled.nav`
     ${MenuItems} {
       display: flex;
       flex-direction: column;
-      background-color: #fff;
-      color: #5945e6;
+      background-color: ${({ theme }) => theme.palette.neutral.white};
+      color: ${({ theme }) => theme.palette.primary.default};
       width: 100%;
       padding: 0 0px;
       margin-top: 4px;

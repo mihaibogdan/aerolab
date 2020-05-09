@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import DownloadSectionBackground from '../../assets/img/platform/download-section-bg.png';
 
 export const Section = styled.section`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
 `;
 
 export const Container = styled.div`
