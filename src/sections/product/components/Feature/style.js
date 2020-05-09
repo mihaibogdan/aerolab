@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Heading5, Paragraph } from '../../../../assets/styles/typography';
+import { Heading5, Paragraph } from 'assets/styles/typography';
 
 export const FeatureWrapper = styled.div`
   display: flex;

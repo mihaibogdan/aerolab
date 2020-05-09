@@ -2,11 +2,11 @@ import React from 'react';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Heading2, Paragraph } from '../../assets/styles/typography';
-import { Section, Container, CenteredTitle, Stores } from './style';
+import { Heading2, Paragraph } from 'assets/styles/typography';
 
-import PlayStore from '../../assets/img/contact/play-store.png';
-import AppStore from '../../assets/img/contact/app-store.png';
+import PlayStore from 'assets/img/contact/play-store.png';
+import AppStore from 'assets/img/contact/app-store.png';
+import { Section, Container, CenteredTitle, Stores } from './style';
 
 function Seo({ theme }) {
   return (

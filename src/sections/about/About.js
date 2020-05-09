@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 
-import { Heading2 } from '../../assets/styles/typography';
-import BoxIcon1 from '../../assets/img/about/box-icon1.png';
-import BoxIcon2 from '../../assets/img/about/box-icon2.png';
-import BoxIcon3 from '../../assets/img/about/box-icon3.png';
-import BoxIcon4 from '../../assets/img/about/box-icon4.png';
-import BoxIcon5 from '../../assets/img/about/box-icon5.png';
-import BoxIcon6 from '../../assets/img/about/box-icon6.png';
-import PlayCircle from '../../assets/img/about/play-circle.svg';
+import { Heading2 } from 'assets/styles/typography';
+import BoxIcon1 from 'assets/img/about/box-icon1.png';
+import BoxIcon2 from 'assets/img/about/box-icon2.png';
+import BoxIcon3 from 'assets/img/about/box-icon3.png';
+import BoxIcon4 from 'assets/img/about/box-icon4.png';
+import BoxIcon5 from 'assets/img/about/box-icon5.png';
+import BoxIcon6 from 'assets/img/about/box-icon6.png';
+import PlayCircle from 'assets/img/about/play-circle.svg';
 
+import Card from 'components/card';
+import VideoOverlay from 'components/videoOverlay';
 import { Section, Container, CenteredTitle, CardGrid, VideoButton } from './style';
-import Card from '../../components/card';
-import VideoOverlay from '../../components/videoOverlay';
 
 function About() {
   const [showVideo, setShowVideo] = useState(false);

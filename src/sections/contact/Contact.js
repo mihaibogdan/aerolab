@@ -1,9 +1,9 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import { Heading2, Paragraph } from '../../assets/styles/typography';
-import { GradientButton } from '../../assets/styles/buttons';
-import ContactImage from '../../assets/img/contact/contact-image.png';
+import { Heading2, Paragraph } from 'assets/styles/typography';
+import { GradientButton } from 'assets/styles/buttons';
+import ContactImage from 'assets/img/contact/contact-image.png';
 
 import { Section, Container, LeftSection, RightSection, Image, Input, TextArea } from './style';
 

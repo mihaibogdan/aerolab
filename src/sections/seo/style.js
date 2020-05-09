@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import SeoBackground from '../../assets/img/seo/seo-bg.png';
+import SeoBackground from 'assets/img/seo/seo-bg.png';
 
 export const Section = styled.section`
   background: #f5f7fd;

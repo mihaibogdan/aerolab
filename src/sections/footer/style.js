@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Heading6, Paragraph, Link } from '../../assets/styles/typography';
+import { Heading6, Paragraph, Link } from 'assets/styles/typography';
 
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.palette.neutral.white};

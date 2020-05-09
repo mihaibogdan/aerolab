@@ -3,9 +3,9 @@ import { Element } from 'react-scroll';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { SolidButton } from '../../assets/styles/buttons';
-import { Heading1, Paragraph, Link } from '../../assets/styles/typography';
-import StartupThumb from '../../assets/img/hero/startup-thumb.png';
+import { SolidButton } from 'assets/styles/buttons';
+import { Heading1, Paragraph, Link } from 'assets/styles/typography';
+import StartupThumb from 'assets/img/hero/startup-thumb.png';
 
 import {
   HeroSection,

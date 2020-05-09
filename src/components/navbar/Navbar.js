@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Menu from '../../assets/img/hero/menu.svg';
-import { SolidButton } from '../../assets/styles/buttons';
+import Menu from 'assets/img/hero/menu.svg';
+import { SolidButton } from 'assets/styles/buttons';
+import LightLogo from 'assets/img/hero/light-logo.png';
+import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
-import LightLogo from '../../assets/img/hero/light-logo.png';
-import DarkLogo from '../../assets/img/hero/dark-logo.png';
 
 function Navbar({ theme }) {
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);

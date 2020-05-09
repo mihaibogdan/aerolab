@@ -2,15 +2,15 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 
-import { Heading2, Paragraph } from '../../assets/styles/typography';
+import { Heading2, Paragraph } from 'assets/styles/typography';
+import Firefox from 'assets/img/clients/firefox.png';
+import Bullfit from 'assets/img/clients/bullfit.png';
+import Adroll from 'assets/img/clients/adroll.png';
+import Eventbrite from 'assets/img/clients/eventbrite.png';
+import Aqua from 'assets/img/clients/aqua.png';
+import Pencil from 'assets/img/clients/pencil.png';
+import Sixbase from 'assets/img/clients/sixbase.png';
 import { Section, Container, CenteredTitle } from './style';
-import Firefox from '../../assets/img/clients/firefox.png';
-import Bullfit from '../../assets/img/clients/bullfit.png';
-import Adroll from '../../assets/img/clients/adroll.png';
-import Eventbrite from '../../assets/img/clients/eventbrite.png';
-import Aqua from '../../assets/img/clients/aqua.png';
-import Pencil from '../../assets/img/clients/pencil.png';
-import Sixbase from '../../assets/img/clients/sixbase.png';
 
 function Clients() {
   const params = {

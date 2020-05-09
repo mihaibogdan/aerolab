@@ -2,6 +2,11 @@ import React from 'react';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { Paragraph, Heading6 } from 'assets/styles/typography';
+import FacebookIcon from 'assets/img/team/facebook.svg';
+import TwitterIcon from 'assets/img/team/twitter.svg';
+import InstagramIcon from 'assets/img/team/instagram.svg';
+import LogoImg from 'assets/img/hero/light-logo.png';
 import {
   Section,
   Container,
@@ -20,11 +25,6 @@ import {
   TweetUser,
   TweetDate,
 } from './style';
-import { Paragraph, Heading6 } from '../../assets/styles/typography';
-import FacebookIcon from '../../assets/img/team/facebook.svg';
-import TwitterIcon from '../../assets/img/team/twitter.svg';
-import InstagramIcon from '../../assets/img/team/instagram.svg';
-import LogoImg from '../../assets/img/hero/light-logo.png';
 
 function Footer({ theme }) {
   return (

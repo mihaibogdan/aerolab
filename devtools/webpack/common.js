@@ -28,6 +28,11 @@ const options = {
   },
   resolve: {
     modules: ['src', 'node_modules'],
+    alias: {
+      assets: 'assets',
+      containers: 'containers',
+      sections: 'utils',
+    },
   },
   module: {
     rules: [

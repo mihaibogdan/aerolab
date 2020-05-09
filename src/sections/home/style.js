@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-import HeroBackground from '../../assets/img/hero/startup-bg.jpg';
+import HeroBackground from 'assets/img/hero/startup-bg.jpg';
 
 const moveLeft = keyframes`
   from {

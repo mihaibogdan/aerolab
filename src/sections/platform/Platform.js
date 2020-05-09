@@ -1,16 +1,17 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import { Heading2, Heading4, Paragraph } from '../../assets/styles/typography';
-import { SolidButton } from '../../assets/styles/buttons';
-import ReactLogo from '../../assets/img/platform/react.svg';
-import MicrosoftLogo from '../../assets/img/platform/microsoft.svg';
-import AppleLogo from '../../assets/img/platform/apple.svg';
-import JavaLogo from '../../assets/img/platform/java.svg';
-import AndroidLogo from '../../assets/img/platform/android.svg';
-import PHPLogo from '../../assets/img/platform/php.svg';
-import MackbookDownload from '../../assets/img/platform/macbook-download.png';
+import { Heading2, Heading4, Paragraph } from 'assets/styles/typography';
+import { SolidButton } from 'assets/styles/buttons';
+import ReactLogo from 'assets/img/platform/react.svg';
+import MicrosoftLogo from 'assets/img/platform/microsoft.svg';
+import AppleLogo from 'assets/img/platform/apple.svg';
+import JavaLogo from 'assets/img/platform/java.svg';
+import AndroidLogo from 'assets/img/platform/android.svg';
+import PHPLogo from 'assets/img/platform/php.svg';
+import MackbookDownload from 'assets/img/platform/macbook-download.png';
 
+import Card from 'components/card';
 import {
   Section,
   Container,
@@ -20,7 +21,6 @@ import {
   DownloadCard,
   MacbookImage,
 } from './style';
-import Card from '../../components/card';
 
 function Platform() {
   return (

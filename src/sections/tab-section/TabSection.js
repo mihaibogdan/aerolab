@@ -3,8 +3,15 @@ import { withTheme } from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
 
-import { Heading2, Heading4, Heading6, Paragraph, Link } from '../../assets/styles/typography';
-import { GradientButton } from '../../assets/styles/buttons';
+import { Heading2, Heading4, Heading6, Paragraph, Link } from 'assets/styles/typography';
+import { GradientButton } from 'assets/styles/buttons';
+
+import CheckList from 'assets/img/tab-section/check.svg';
+import FeaturedImage from 'assets/img/tab-section/featured-image.png';
+import MissionImage from 'assets/img/tab-section/mission-image.png';
+import SupportImage from 'assets/img/tab-section/support-image.png';
+import HotlineImage from 'assets/img/tab-section/hotline.png';
+import EmailImage from 'assets/img/tab-section/email.png';
 import {
   Section,
   Container,
@@ -23,12 +30,6 @@ import {
   TabList,
   Tab,
 } from './style';
-import CheckList from '../../assets/img/tab-section/check.svg';
-import FeaturedImage from '../../assets/img/tab-section/featured-image.png';
-import MissionImage from '../../assets/img/tab-section/mission-image.png';
-import SupportImage from '../../assets/img/tab-section/support-image.png';
-import HotlineImage from '../../assets/img/tab-section/hotline.png';
-import EmailImage from '../../assets/img/tab-section/email.png';
 
 const tabs = [
   {

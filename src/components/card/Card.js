@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { Heading6, Paragraph } from '../../assets/styles/typography';
+import { Heading6, Paragraph } from 'assets/styles/typography';
 import { StyleCard } from './style';
 
 function Card({ cardTitle, cardIcon, cardParagraph, small, ...props }) {

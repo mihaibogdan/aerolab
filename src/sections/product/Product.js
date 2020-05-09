@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import { Heading2, Paragraph } from '../../assets/styles/typography';
+import { Heading2, Paragraph } from 'assets/styles/typography';
+
+import EffectPhoto from 'assets/img/product/effect.jpg';
+import MarketingPhoto from 'assets/img/product/marketing.jpg';
+import SEOPhoto from 'assets/img/product/seo.jpg';
 import Feature from './components/Feature';
 import { Section, Container, CenteredTitle, Column, FeaturesGrid, FeatureImage } from './style';
-
-import EffectPhoto from '../../assets/img/product/effect.jpg';
-import MarketingPhoto from '../../assets/img/product/marketing.jpg';
-import SEOPhoto from '../../assets/img/product/seo.jpg';
 
 const features = [
   {

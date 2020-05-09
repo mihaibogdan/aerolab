@@ -2,9 +2,9 @@ import React from 'react';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Heading5, Paragraph } from '../../../../assets/styles/typography';
+import { Heading5, Paragraph } from 'assets/styles/typography';
+import SquareIcon from 'assets/img/product/square.svg';
 import { FeatureWrapper, FeatureIcon } from './style';
-import SquareIcon from '../../../../assets/img/product/square.svg';
 
 function Feature({ name, description, theme, ...props }) {
   return (

@@ -5,13 +5,13 @@ import { Element } from 'react-scroll';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Heading2, Paragraph } from '../../assets/styles/typography';
-import Avatar1 from '../../assets/img/team/avatar1.png';
-import Avatar2 from '../../assets/img/team/avatar2.png';
-import Avatar3 from '../../assets/img/team/avatar3.png';
-import Avatar4 from '../../assets/img/team/avatar4.png';
+import { Heading2, Paragraph } from 'assets/styles/typography';
+import Avatar1 from 'assets/img/team/avatar1.png';
+import Avatar2 from 'assets/img/team/avatar2.png';
+import Avatar3 from 'assets/img/team/avatar3.png';
+import Avatar4 from 'assets/img/team/avatar4.png';
+import TeamCard from 'components/teamCard';
 import { Section, Container, CenteredTitle } from './style';
-import TeamCard from '../../components/teamCard';
 
 function Team({ theme }) {
   const params = {
