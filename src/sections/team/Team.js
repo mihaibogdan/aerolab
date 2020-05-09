@@ -2,6 +2,8 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import { Element } from 'react-scroll';
+import { withTheme } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { Heading2, Paragraph } from '../../assets/styles/typography';
 import Avatar1 from '../../assets/img/team/avatar1.png';
@@ -11,7 +13,7 @@ import Avatar4 from '../../assets/img/team/avatar4.png';
 import { Section, Container, CenteredTitle } from './style';
 import TeamCard from '../../components/teamCard';
 
-function Team() {
+function Team({ theme }) {
   const params = {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -43,7 +45,7 @@ function Team() {
         <Section id="team">
           <Container>
             <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-              <Heading2 color="#fff">Our experience experts</Heading2>
+              <Heading2 color={theme.palette.neutral.white}>Our experience experts</Heading2>
             </CenteredTitle>
             <Paragraph
               textAlign="center"
@@ -140,4 +142,8 @@ function Team() {
   );
 }
 
-export default Team;
+Team.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(Team);

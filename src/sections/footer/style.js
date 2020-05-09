@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Heading6, Paragraph, Link } from '../../assets/styles/typography';
 
 export const Section = styled.section`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   background: #242659;
   border-top: 3px solid #5556ca;
 `;
@@ -94,14 +94,14 @@ export const SocialIcon = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 
   &:hover {
-    background-color: #5945e6;
-    border: 1px solid #5945e6;
-    color: #fff;
+    background-color: ${({ theme }) => theme.palette.primary.default};
+    border: 1px solid ${({ theme }) => theme.palette.primary.default};
+    color: ${({ theme }) => theme.palette.neutral.white};
   }
 `;
 
@@ -113,7 +113,7 @@ export const Tweet = styled.div`
 
 export const TweetBox = styled.div`
   position: relative;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   padding: 19px 20px 25px;
   border-radius: 5px;
   display: flex;
@@ -132,7 +132,7 @@ export const TweetBox = styled.div`
     transform: rotate(45deg);
     left: 30px;
     bottom: -12px;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent ${({ theme }) => theme.palette.neutral.white} transparent transparent;
     border-width: 12px;
   }
 `;
@@ -147,7 +147,7 @@ export const TweetLink = styled(Link)`
   }
 
   &:hover {
-    color: #5945e6;
+    color: ${({ theme }) => theme.palette.primary.default};
   }
 `;
 
@@ -166,7 +166,7 @@ export const TweetInfo = styled.div`
 `;
 
 export const TweetUser = styled.span`
-  color: #fff;
+  color: ${({ theme }) => theme.palette.neutral.white};
   font-size: 14px;
   font-weight: 500;
 `;

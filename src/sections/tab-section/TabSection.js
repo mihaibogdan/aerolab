@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { withTheme } from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import PropTypes from 'prop-types';
 
 import { Heading2, Heading4, Heading6, Paragraph, Link } from '../../assets/styles/typography';
 import { GradientButton } from '../../assets/styles/buttons';
@@ -31,7 +33,7 @@ import EmailImage from '../../assets/img/tab-section/email.png';
 const tabs = [
   {
     name: 'Featured',
-    content: (
+    content: (theme) => (
       <TabContent
         className="active-tab"
         data-aos="fade-up"
@@ -58,7 +60,7 @@ const tabs = [
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
-                <CheckList width="16px" color="#4fce5d" />
+                <CheckList width="16px" color={theme.palette.accent} />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Receive real-time business analytics
                 </Paragraph>
@@ -69,7 +71,7 @@ const tabs = [
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
-                <CheckList width="16px" color="#4fce5d" />
+                <CheckList width="16px" color={theme.palette.accent} />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Cross-browser Compatible Design
                 </Paragraph>
@@ -80,7 +82,7 @@ const tabs = [
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
-                <CheckList width="16px" color="#4fce5d" />
+                <CheckList width="16px" color={theme.palette.accent} />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Completely Gutenberg Ready
                 </Paragraph>
@@ -91,7 +93,7 @@ const tabs = [
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
-                <CheckList width="16px" color="#4fce5d" />
+                <CheckList width="16px" color={theme.palette.accent} />
                 <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
                   Highly Responsive Tools
                 </Paragraph>
@@ -123,7 +125,7 @@ const tabs = [
   },
   {
     name: 'Mission',
-    content: (
+    content: (theme) => (
       <TabContent data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <LeftSection>
           <TabImage src={MissionImage} alt="" />
@@ -131,7 +133,7 @@ const tabs = [
         <RightSection>
           <CenteredContent>
             <Heading4
-              color="#2e3280"
+              color={theme.palette.primary.dark}
               fontWeight="400"
               data-aos="fade-up"
               data-aos-duration="600"
@@ -165,7 +167,7 @@ const tabs = [
   },
   {
     name: 'New Friendly Support',
-    content: (
+    content: () => (
       <TabContent data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <LeftSection>
           <TabImage src={SupportImage} alt="" />
@@ -208,7 +210,7 @@ const tabs = [
   },
 ];
 
-function TabSection() {
+function TabSection({ theme }) {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>
@@ -242,7 +244,7 @@ function TabSection() {
                   unmountOnExit
                   appear
                 >
-                  {tabs[activeTab].content}
+                  {tabs[activeTab].content(theme)}
                 </CSSTransition>
               ) : null
             )}
@@ -253,4 +255,8 @@ function TabSection() {
   );
 }
 
-export default TabSection;
+TabSection.propTypes = {
+  theme: PropTypes.object,
+};
+
+export default withTheme(TabSection);
