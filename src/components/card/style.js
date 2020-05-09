@@ -16,6 +16,14 @@ export const StyleCard = styled.div`
     transform: translateY(-3px);
   }
 
+  &&.aos-finished[data-aos^='fade'][data-aos^='fade'] {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
   .cardTitle {
     margin: 20px 0px 15px 0px;
   }

@@ -42,6 +42,11 @@ export const GradientButton = styled.button`
   cursor: pointer;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &&.aos-finished[data-aos^='fade'][data-aos^='fade'] {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+  }
+
   &:hover {
     transform: translateY(-3px);
     background-position: 100%;

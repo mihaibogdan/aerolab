@@ -21,6 +21,14 @@ AOS.init({
   offset: 0,
 });
 
+document.addEventListener('aos:in', ({ detail }) => {
+  const duration = detail.getAttribute('data-aos-duration') || 0;
+
+  setTimeout(() => {
+    detail.classList.add('aos-finished');
+  }, duration);
+});
+
 function App() {
   return (
     <>
