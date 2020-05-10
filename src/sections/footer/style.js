@@ -1,11 +1,10 @@
 import styled from 'styled-components';
+import { rgba, darken } from 'polished';
 
 import { Heading6, Paragraph, Link } from 'assets/styles/typography';
 
 export const Section = styled.section`
-  background-color: ${({ theme }) => theme.palette.neutral.white};
-  background: #242659;
-  border-top: 3px solid #5556ca;
+  background: ${({ theme }) => darken(0.1, theme.palette.primary.dark)};
 `;
 
 export const Container = styled.div`
@@ -88,7 +87,7 @@ export const SocialIcon = styled.a`
   height: 48px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #ededed;
+  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.white, 1)};
   margin: 8px;
 
   display: flex;

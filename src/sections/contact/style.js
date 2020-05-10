@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.palette.neutral.white};
@@ -55,15 +56,15 @@ export const Image = styled.img`
 `;
 
 export const Input = styled.input`
-  color: #ababab;
+  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.4)};
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: #f8f8f8;
+  background-color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.024)};
   font-size: 15px;
   letter-spacing: 0;
   width: 100%;
   ${(props) => props.width && `width: ${props.width}`};
-  border: 1px solid #eee;
+  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.black, 0.04)};
   border-radius: 5px;
   padding: 3px 20px;
   height: 56px;
@@ -72,14 +73,14 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  color: #ababab;
+  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.4)};
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: #f8f8f8;
+  background-color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.024)};
   font-size: 15px;
   letter-spacing: 0;
   width: 100%;
-  border: 1px solid #eee;
+  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.black, 0.04)};
   border-radius: 5px;
   padding: 15px 20px;
   margin-bottom: 20px;

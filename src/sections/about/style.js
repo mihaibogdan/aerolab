@@ -53,7 +53,7 @@ export const VideoButton = styled.div`
   margin: 40px 0px;
   .videoButtonText {
     text-transform: uppercase;
-    color: #7e7e7e;
+    color: inherit;
     margin-left: 10px;
     letter-spacing: 3px;
     font-weight: 500;
@@ -67,7 +67,7 @@ export const VideoButton = styled.div`
       right: 0;
       width: 0;
       height: 1px;
-      background-color: #7e7e7e;
+      background-color: inherit;
     }
   }
 

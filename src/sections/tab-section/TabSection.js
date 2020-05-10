@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withTheme } from 'styled-components';
+import { rgba } from 'polished';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
 
@@ -47,7 +48,7 @@ const tabs = [
         <RightSection>
           <CenteredContent>
             <Paragraph
-              color="#7e7e7e"
+              color="inherit"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="300"
@@ -56,52 +57,52 @@ const tabs = [
             </Paragraph>
             <FeaturedList>
               <FeaturedListItem
-                color="#7e7e7e"
+                color="inherit"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
                 <CheckList width="16px" color={theme.palette.accent} />
-                <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
+                <Paragraph color="inherit" margin="0px 0px 0px 20px">
                   Receive real-time business analytics
                 </Paragraph>
               </FeaturedListItem>
               <FeaturedListItem
-                color="#7e7e7e"
+                color="inherit"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
                 <CheckList width="16px" color={theme.palette.accent} />
-                <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
+                <Paragraph color="inherit" margin="0px 0px 0px 20px">
                   Cross-browser Compatible Design
                 </Paragraph>
               </FeaturedListItem>
               <FeaturedListItem
-                color="#7e7e7e"
+                color="inherit"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
                 <CheckList width="16px" color={theme.palette.accent} />
-                <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
+                <Paragraph color="inherit" margin="0px 0px 0px 20px">
                   Completely Gutenberg Ready
                 </Paragraph>
               </FeaturedListItem>
               <FeaturedListItem
-                color="#7e7e7e"
+                color="inherit"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="300"
               >
                 <CheckList width="16px" color={theme.palette.accent} />
-                <Paragraph color="#7e7e7e" margin="0px 0px 0px 20px">
+                <Paragraph color="inherit" margin="0px 0px 0px 20px">
                   Highly Responsive Tools
                 </Paragraph>
               </FeaturedListItem>
             </FeaturedList>
             <GradientButton
-              color="#7e7e7e"
+              color="inherit"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="350"
@@ -109,7 +110,7 @@ const tabs = [
               Learn mode
             </GradientButton>
             <LearnMoreRow
-              color="#7e7e7e"
+              color="inherit"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="400"
@@ -143,7 +144,7 @@ const tabs = [
               The best ways to create websites
             </Heading4>
             <Paragraph
-              color="#7e7e7e"
+              color="inherit"
               margin="40px 0px"
               data-aos="fade-up"
               data-aos-duration="600"
@@ -168,7 +169,7 @@ const tabs = [
   },
   {
     name: 'New Friendly Support',
-    content: () => (
+    content: (theme) => (
       <TabContent data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <LeftSection>
           <TabImage src={SupportImage} alt="" />
@@ -178,30 +179,36 @@ const tabs = [
             <SupportCard data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
               <CardImage src={HotlineImage} alt="" />
               <CardContent>
-                <Heading6 color="#ababab" textAlign="left">
+                <Heading6 color={rgba(theme.palette.neutral.black, 0.4)} textAlign="left">
                   HOTLINE
                 </Heading6>
                 <a href="tel:">
-                  <Heading4 color="#333" margin="10px 0px 20px 0px">
+                  <Heading4
+                    color={rgba(theme.palette.neutral.black, 0.8)}
+                    margin="10px 0px 20px 0px"
+                  >
                     0122 8899900
                   </Heading4>
                 </a>
-                <Paragraph color="#7e7e7e">24/7 phone and email support</Paragraph>
+                <Paragraph color="inherit">24/7 phone and email support</Paragraph>
               </CardContent>
             </SupportCard>
 
             <SupportCard data-aos="fade-up" data-aos-duration="600" data-aos-delay="360">
               <CardImage src={EmailImage} alt="" />
               <CardContent>
-                <Heading6 color="#ababab" textAlign="left">
+                <Heading6 color={rgba(theme.palette.neutrla.black, 0.4)} textAlign="left">
                   GIVE YOUR FEEDBACK
                 </Heading6>
                 <a href="mailto:">
-                  <Heading4 color="#333" margin="10px 0px 20px 0px">
+                  <Heading4
+                    color={rgba(theme.palette.neutral.black, 0.8)}
+                    margin="10px 0px 20px 0px"
+                  >
                     hello@seopro.com
                   </Heading4>
                 </a>
-                <Paragraph color="#7e7e7e">24/7 phone and email support</Paragraph>
+                <Paragraph color="inherit">24/7 phone and email support</Paragraph>
               </CardContent>
             </SupportCard>
           </CenteredContent>

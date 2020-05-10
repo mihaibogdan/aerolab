@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Section = styled.section`
-  background: linear-gradient(-259deg, #5e60e7, #9c7af2 65%);
+  background: ${({ theme }) => theme.palette.gradients.background};
   margin-top: 80px;
 `;
 
@@ -37,7 +38,7 @@ export const Container = styled.div`
     --swiper-pagination-color: ${({ theme }) => theme.palette.neutral.white};
     margin: 8px;
     display: inline-block;
-    background-color: #d8d8d8;
+    background-color: ${({ theme }) => rgba(theme.palette.neutral.white, 0.6)};
     opacity: 1;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -52,7 +53,7 @@ export const Container = styled.div`
   .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet-active {
     width: 16px;
     height: 16px;
-    box-shadow: 0 0 9px #ededed;
+    box-shadow: 0 0 9px ${({ theme }) => rgba(theme.palette.neutral.black, 0.1)};
     opacity: 1;
     background-color: ${({ theme }) => theme.palette.neutral.white};
     margin: 4px;

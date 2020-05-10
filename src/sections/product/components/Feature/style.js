@@ -25,7 +25,7 @@ export const FeatureWrapper = styled.div`
 export const FeatureIcon = styled.div`
   width: 70px;
   height: 70px;
-  background-image: linear-gradient(-225deg, #f8c59b, #e68c60);
+  background-image: ${({ theme }) => theme.palette.gradients.secondary};
 
   display: flex;
   align-items: center;

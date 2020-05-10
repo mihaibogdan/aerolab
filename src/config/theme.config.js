@@ -11,11 +11,13 @@ const theme = {
     neutral: {
       white: '#fff',
       black: '#000',
+      grey: '#7e7e7e',
     },
 
     gradients: {
-      primary: 'linear-gradient(218deg,#2e327f,#9c7af2 50%,#5e61e7)',
-      secondary: 'linear-gradient(-225deg,#f8c59b,#e68c60)',
+      primary: 'linear-gradient(218deg, #5e327f, #9c7af2 50%, #5e61e7)',
+      secondary: 'linear-gradient(-225deg, #f8c59b, #e68c60)',
+      background: 'linear-gradient(-259deg, #5e60e7, #9c7af2 65%)',
     },
   },
   opacities: {
@@ -23,6 +25,8 @@ const theme = {
     80: '80%',
     60: '80%',
     40: '80%',
+    20: '20%',
+    10: '10%',
     0: '80%',
   },
 };

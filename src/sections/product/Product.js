@@ -43,7 +43,7 @@ function Product() {
 
           <Paragraph
             className="section-description"
-            color="#7e7e7e"
+            color="inherit"
             textAlign="center"
             margin="15px 0 0 0"
             data-aos="fade-up"

@@ -18,7 +18,7 @@ function Contact() {
                 Let’s cooperate!
               </Heading2>
               <Paragraph
-                color="#7e7e7e"
+                color="inherit"
                 margin="0px 0px 60px 0px"
                 data-aos="fade-up"
                 data-aos-duration="600"

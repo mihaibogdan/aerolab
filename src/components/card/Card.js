@@ -10,7 +10,7 @@ function Card({ cardTitle, cardIcon, cardParagraph, small, ...props }) {
     <StyleCard {...props} small={small}>
       {cardIcon}
       <Heading6 className={small ? 'smallCardTitle' : 'cardTitle'}>{cardTitle}</Heading6>
-      <Paragraph color="#7e7e7e" textAlign="center">
+      <Paragraph color="inherit" textAlign="center">
         {cardParagraph}
       </Paragraph>
     </StyleCard>

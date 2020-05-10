@@ -45,7 +45,7 @@ function Clients() {
             <Heading2>A reliable top-rated company</Heading2>
           </CenteredTitle>
           <Paragraph
-            color="#7e7e7e"
+            color="inherit"
             textAlign="center"
             margin="15px 0px 45px 0px"
             data-aos="fade-up"

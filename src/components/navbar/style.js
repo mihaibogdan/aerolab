@@ -84,7 +84,7 @@ export const Nav = styled.nav`
     background-color: ${({ theme }) => theme.palette.neutral.white};
     box-shadow: 0 18px 40px 5px rgba(51, 51, 51, 0.1);
     height: 80px;
-    color: #000;
+    color: ${({ theme }) => theme.palette.neutral.black};
 
     ${HamburgerMenu} {
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -115,7 +115,7 @@ export const Nav = styled.nav`
 
       ${ScrollLink} {
         margin: 10px 14px;
-        color: #000;
+        color: ${({ theme }) => theme.palette.neutral.black};
       }
 
       &.open-on-mobile {

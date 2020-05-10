@@ -34,7 +34,7 @@ export const GradientButton = styled.button`
   letter-spacing: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.palette.neutral.white};
-  background-image: linear-gradient(218deg, #5e61e7, #9c7af2 50%, #5e61e7);
+  background-image: ${({ theme }) => theme.palette.gradients.primary};
   background-size: 200% auto;
   background-position: 0;
   border: none;

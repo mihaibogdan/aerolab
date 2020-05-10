@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Section = styled.section`
-  background: #f5f7fd;
+  background: ${({ theme }) => rgba(theme.palette.primary.light, 0.064)};
   padding-top: 100px;
 `;
 

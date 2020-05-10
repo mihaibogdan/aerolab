@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const StyleCard = styled.div`
   border-radius: 5px;
@@ -28,7 +29,7 @@ export const StyleCard = styled.div`
     margin: 20px 0px 15px 0px;
   }
   .smallCardTitle {
-    color: #696969;
+    color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.6)};
     margin: 20px 0px 0px 0px;
     font-size: 15px;
   }

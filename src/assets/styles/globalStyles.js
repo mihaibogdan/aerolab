@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Rubik, sans-serif;
     font-size: 15px;
     line-height: 1.74;
-    color: #7e7e7e;
+    color: ${({ theme }) => theme.palette.neutral.grey};
   }
 
   body.video-open {

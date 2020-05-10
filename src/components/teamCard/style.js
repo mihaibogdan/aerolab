@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const SliderCard = styled.div`
   border-radius: 5px;
@@ -26,13 +27,13 @@ export const SocialIcon = styled.a`
   height: 48px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #ededed;
+  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.black, 0.1)};
   margin: 20px 10px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #696969;
+  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.6)};
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 

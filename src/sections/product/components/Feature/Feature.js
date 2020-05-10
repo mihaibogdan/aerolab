@@ -1,5 +1,6 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
+import { rgba } from 'polished';
 import PropTypes from 'prop-types';
 
 import { Heading5, Paragraph } from 'assets/styles/typography';
@@ -13,7 +14,7 @@ function Feature({ name, description, theme, ...props }) {
         <SquareIcon color={theme.palette.neutral.white} width="24" height="24" />
       </FeatureIcon>
       <Heading5 color={theme.palette.primary.dark}>{name}</Heading5>
-      <Paragraph color="#696969">{description}</Paragraph>
+      <Paragraph color={rgba(theme.palette.neutral.black, 0.6)}>{description}</Paragraph>
     </FeatureWrapper>
   );
 }

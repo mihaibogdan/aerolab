@@ -33,7 +33,7 @@ function Platform() {
             </CenteredTitle>
 
             <Paragraph
-              color="#7e7e7e"
+              color="inherit"
               textAlign="center"
               data-aos="fade-up"
               data-aos-duration="600"

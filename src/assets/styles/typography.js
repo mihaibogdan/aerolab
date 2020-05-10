@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Heading1 = styled.h1`
   font-size: 56px;
@@ -48,7 +49,7 @@ export const Heading5 = styled.h5`
   font-weight: 500;
   line-height: 1.23;
   margin: 24px 0px 12px 0px;
-  color: #333;
+  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.8)};
   ${(props) => props.color && `color: ${props.color}`};
 
   @media screen and (max-width: 768px) {
@@ -61,7 +62,7 @@ export const Heading6 = styled.h6`
   font-weight: 500;
   line-height: 1.23;
   margin: 0;
-  color: #6d70a6;
+  color: ${({ theme }) => rgba(theme.palette.primary.dark, 0.6)};
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
   ${(props) => props.textAlign && `text-align: ${props.textAlign}`};

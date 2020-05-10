@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 import { Paragraph } from 'assets/styles/typography';
 
@@ -162,8 +163,8 @@ export const Tab = styled.button`
   padding: 21px 20px 19px;
   margin: 0px 10px;
   background-color: ${({ theme }) => theme.palette.neutral.white};
-  border: 1px solid #ededed;
-  color: #696969;
+  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.black, 0.1)};
+  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.6)};
   min-width: 200px;
   border-radius: 5px;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);

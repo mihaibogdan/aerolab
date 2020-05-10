@@ -14,7 +14,7 @@ const moveLeft = keyframes`
 
 export const HeroSection = styled.section`
   min-height: 100vh;
-  background: linear-gradient(-259deg, #5e60e7, #9c7af2 65%);
+  background: ${({ theme }) => theme.palette.gradients.background};
   background: url(${HeroBackground});
   background-repeat: none;
   background-size: cover;

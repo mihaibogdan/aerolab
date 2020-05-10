@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import SeoBackground from 'assets/img/seo/seo-bg.png';
 
 export const Section = styled.section`
-  background: #f5f7fd;
   background: url(${SeoBackground}) top right 170px no-repeat,
-    linear-gradient(-259deg, #8383ed, #b095f5 65%);
+    ${({ theme }) => theme.palette.gradients.background};
   padding: 120px 0;
 
   @media screen and (max-width: 960px) {

@@ -54,7 +54,7 @@ export const DownloadSection = styled.div`
   margin: 80px 0px;
   position: relative;
   background: url(${DownloadSectionBackground}) 55% 100%,
-    linear-gradient(-138deg, #5e60e7, #9c7af2 50%, #5e60e7);
+    ${({ theme }) => theme.palette.gradients.background};
   background-repeat: no-repeat;
   border-radius: 5px;
   height: 305px;
