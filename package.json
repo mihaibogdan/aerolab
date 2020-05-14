@@ -57,5 +57,8 @@
     "> 1%",
     "not IE 11",
     "last 1 Opera version"
-  ]
+  ],
+  "engines": {
+    "node": "12.16.x"
+  }
 }
