@@ -52,7 +52,8 @@ function Clients() {
             data-aos-duration="600"
             data-aos-delay="150"
           >
-            Ob etabliertes Unternehmen oder Startup, seit über 10 Jahren arbeiten wir mit den Technologie-Führern weltweit zusammen.
+            Ob etabliertes Unternehmen oder Startup, seit über 10 Jahren arbeiten wir mit den
+            Technologie-Führern weltweit zusammen.
           </Paragraph>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <Swiper {...params}>

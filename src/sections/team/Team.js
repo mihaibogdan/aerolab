@@ -54,7 +54,8 @@ function Team({ theme }) {
               data-aos-duration="600"
               data-aos-delay="150"
             >
-             Unsere Entwickler haben mindestens 3 Jahre Berufserfahrung und sind Experten in ihrem jeweiligen Fachbereich.
+              Unsere Entwickler haben mindestens 3 Jahre Berufserfahrung und sind Experten in ihrem
+              jeweiligen Fachbereich.
             </Paragraph>
 
             <Swiper {...params}>

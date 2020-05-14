@@ -39,7 +39,8 @@ function Platform() {
               data-aos-duration="600"
               data-aos-delay="150"
             >
-              Sowohl die Arbeit an bestehenden Systemen oder die Integration neuster Technologien stellen für unser Software-Entwickler-Team kein Problem dar.
+              Sowohl die Arbeit an bestehenden Systemen oder die Integration neuster Technologien
+              stellen für unser Software-Entwickler-Team kein Problem dar.
             </Paragraph>
 
             <CardGrid data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
@@ -72,7 +73,8 @@ function Platform() {
                   data-aos-duration="600"
                   data-aos-delay="350"
                 >
-                  Lad dir jetzt unsere Case-Studies runter und überzeuge dich selbst von der Qualität unserer Arbeit.
+                  Lad dir jetzt unsere Case-Studies runter und überzeuge dich selbst von der
+                  Qualität unserer Arbeit.
                 </Paragraph>
                 <SolidButton data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                   Get AeroLand

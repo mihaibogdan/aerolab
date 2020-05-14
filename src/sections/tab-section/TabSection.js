@@ -225,9 +225,7 @@ function TabSection({ theme }) {
       <Section>
         <Container>
           <CenteredTitle data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <Heading2>
-              Direkter Ansprechpartner aus München für alle Anfragen.
-            </Heading2>
+            <Heading2>Direkter Ansprechpartner aus München für alle Anfragen.</Heading2>
           </CenteredTitle>
 
           <TabList data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">

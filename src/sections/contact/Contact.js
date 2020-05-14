@@ -24,7 +24,8 @@ function Contact() {
                 data-aos-duration="600"
                 data-aos-delay="150"
               >
-                Wenn du heute schon Unterstützung brauchst, oder doch vielleicht erst morgen: Schreib uns eine kurze Nachricht, damit wir in Kontakt bleiben können.
+                Wenn du heute schon Unterstützung brauchst, oder doch vielleicht erst morgen:
+                Schreib uns eine kurze Nachricht, damit wir in Kontakt bleiben können.
               </Paragraph>
               <form data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <Input type="text" placeholder="Name *" name="name" width="calc(50% - 20px)" />
