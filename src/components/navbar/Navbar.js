@@ -3,7 +3,7 @@ import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Menu from 'assets/img/hero/menu.svg';
-import { SolidButton } from 'assets/styles/buttons';
+import { LinkButton } from 'assets/styles/typography';
 import LightLogo from 'assets/img/hero/light-logo.png';
 import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
@@ -93,15 +93,15 @@ function Navbar({ theme }) {
           </ScrollLink>
         </MenuItems>
 
-        <SolidButton
+        <LinkButton
           className="hire-us"
+          target="_blank"
+          href="https://wa.me/491702988400?text=Hi%20there!"
           color={!scrollStarted ? theme.palette.primary.default : theme.palette.neutral.white}
-          backgroundColor={
-            !scrollStarted ? theme.palette.neutral.white : theme.palette.primary.default
-          }
+          backgroundColor={!scrollStarted ? theme.palette.neutral.white : theme.palette.accent}
         >
-          Chat Starten
-        </SolidButton>
+          Whatsapp Chat Starten
+        </LinkButton>
 
         <HamburgerMenu
           className="hamburger-menu"

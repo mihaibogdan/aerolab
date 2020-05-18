@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { rgba } from 'polished';
 
 import { Paragraph } from 'assets/styles/typography';
 
@@ -144,48 +143,4 @@ export const CardContent = styled.div`
   margin-left: 40px;
   display: flex;
   flex-direction: column;
-`;
-
-export const TabList = styled.div`
-  display: flex;
-  margin: 60px auto 40px auto;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-export const Tab = styled.button`
-  text-transform: uppercase;
-  text-align: center;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 21px 20px 19px;
-  margin: 0px 10px;
-  background-color: ${({ theme }) => theme.palette.neutral.white};
-  border: 1px solid ${({ theme }) => rgba(theme.palette.neutral.black, 0.1)};
-  color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.6)};
-  min-width: 200px;
-  border-radius: 5px;
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &.active {
-    background-color: ${({ theme }) => theme.palette.primary.light};
-    color: ${({ theme }) => theme.palette.neutral.white};
-    border: 1px solid transparent;
-
-    &:hover {
-      cursor: default !important;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 10px;
-    padding: 12px 13px 12px;
-    width: 100%;
-  }
 `;

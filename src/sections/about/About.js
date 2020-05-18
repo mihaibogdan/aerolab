@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
 
 import { Heading2 } from 'assets/styles/typography';
@@ -8,25 +8,13 @@ import BoxIcon3 from 'assets/img/about/box-icon3.png';
 import BoxIcon4 from 'assets/img/about/box-icon4.png';
 import BoxIcon5 from 'assets/img/about/box-icon5.png';
 import BoxIcon6 from 'assets/img/about/box-icon6.png';
-import PlayCircle from 'assets/img/about/play-circle.svg';
 
 import Card from 'components/card';
-import VideoOverlay from 'components/videoOverlay';
-import { Section, Container, CenteredTitle, CardGrid, VideoButton } from './style';
+import { Section, Container, CenteredTitle, CardGrid } from './style';
 
 function About() {
-  const [showVideo, setShowVideo] = useState(false);
   return (
     <>
-      {showVideo && (
-        <VideoOverlay
-          onClose={() => {
-            setShowVideo(false);
-            document.body.classList.remove('video-open');
-          }}
-        />
-      )}
-
       <Element name="about">
         <Section id="about">
           <Container>
@@ -35,19 +23,6 @@ function About() {
                 Software-Entwickler für 300€ pro Tag <br /> für das Outsourcing Deiner IT Projekte
               </Heading2>
             </CenteredTitle>
-
-            <VideoButton
-              onClick={() => {
-                setShowVideo(true);
-                document.body.classList.add('video-open');
-              }}
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-            >
-              <PlayCircle />
-              <span className="videoButtonText">Intro & Demo Video</span>
-            </VideoButton>
 
             <CardGrid>
               <Card

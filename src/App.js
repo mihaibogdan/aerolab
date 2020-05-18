@@ -10,12 +10,10 @@ import Navbar from './components/navbar';
 import Home from './sections/home';
 import About from './sections/about';
 import Platform from './sections/platform';
-import TabSection from './sections/tab-section';
+import ContactDirector from './sections/contact-director';
 import Team from './sections/team';
-import Product from './sections/product';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
-import Seo from './sections/seo';
 import Footer from './sections/footer';
 
 AOS.init({
@@ -37,14 +35,12 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Home />
+      <Clients />
       <About />
       <Platform />
-      <TabSection />
+      <ContactDirector />
       <Team />
-      <Product />
-      <Clients />
       <Contact />
-      <Seo />
       <Footer />
     </ThemeProvider>
   );

@@ -3,8 +3,7 @@ import { Element } from 'react-scroll';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { SolidButton } from 'assets/styles/buttons';
-import { Heading1, Paragraph, Link } from 'assets/styles/typography';
+import { Heading1, Paragraph, Link, LinkButton } from 'assets/styles/typography';
 import StartupThumb from 'assets/img/hero/startup-thumb.png';
 
 import {
@@ -34,14 +33,18 @@ function Home({ theme }) {
                 für nur 300€ Tagessatz.
               </Paragraph>
               <CTARow>
-                <SolidButton>Whatsapp Chat Starten</SolidButton>
+                <LinkButton
+                  target="_blank"
+                  href="https://wa.me/491702988400?text=Hi%20there!"
+                  color="white"
+                >
+                  Whatsapp Chat Starten
+                </LinkButton>
                 <QuestionsText>
                   <Paragraph margin="0px 5px 0px 20px" fontWeight="500">
                     Lieber per Email?
                   </Paragraph>
-                  <Link target="_blank" href="https://wa.me/491702988400?text=Hi%20there!">
-                    Hier kontaktieren
-                  </Link>
+                  <Link href="mailto:hello@developer-lab.de">Hier kontaktieren</Link>
                 </QuestionsText>
               </CTARow>
             </TextBlock>

@@ -1,26 +1,16 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import { Heading2, Heading4, Paragraph } from 'assets/styles/typography';
-import { SolidButton } from 'assets/styles/buttons';
+import { Heading2, Paragraph } from 'assets/styles/typography';
 import ReactLogo from 'assets/img/platform/react.svg';
 import MicrosoftLogo from 'assets/img/platform/microsoft.svg';
 import AppleLogo from 'assets/img/platform/apple.svg';
 import JavaLogo from 'assets/img/platform/java.svg';
 import AndroidLogo from 'assets/img/platform/android.svg';
 import PHPLogo from 'assets/img/platform/php.svg';
-import MackbookDownload from 'assets/img/platform/macbook-download.png';
 
 import Card from 'components/card';
-import {
-  Section,
-  Container,
-  CenteredTitle,
-  CardGrid,
-  DownloadSection,
-  DownloadCard,
-  MacbookImage,
-} from './style';
+import { Section, Container, CenteredTitle, CardGrid } from './style';
 
 function Platform() {
   return (
@@ -61,33 +51,6 @@ function Platform() {
               <Card small className="platformCard" cardIcon={<AndroidLogo />} cardTitle="Android" />
               <Card small className="platformCard" cardIcon={<PHPLogo />} cardTitle="PHP" />
             </CardGrid>
-
-            <DownloadSection data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-              <DownloadCard>
-                <Heading4 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                  Unsere Kunden lieben uns!
-                </Heading4>
-                <Paragraph
-                  margin="0px 0px 20px 0px"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-delay="350"
-                >
-                  Lad dir jetzt unsere Case-Studies runter und überzeuge dich selbst von der
-                  Qualität unserer Arbeit.
-                </Paragraph>
-                <SolidButton data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-                  Get AeroLand
-                </SolidButton>
-              </DownloadCard>
-
-              <MacbookImage
-                src={MackbookDownload}
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="300"
-              />
-            </DownloadSection>
           </Container>
         </Section>
       </Element>

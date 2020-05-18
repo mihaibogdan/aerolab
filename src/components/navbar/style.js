@@ -127,12 +127,12 @@ export const Nav = styled.nav`
       }
     }
 
-    button.hire-us {
-      display: none;
+    a.hire-us {
+      margin: 0 auto;
     }
+
     button.hamburger-menu {
       display: block;
-      margin-left: auto;
     }
   }
 `;

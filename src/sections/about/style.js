@@ -32,6 +32,7 @@ export const CenteredTitle = styled.div`
 export const CardGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-top: 80px;
 
   .aboutCard {
     width: calc(33.333% - 30px);
@@ -42,41 +43,6 @@ export const CardGrid = styled.div`
     }
     @media screen and (max-width: 768px) {
       width: calc(100% - 30px);
-    }
-  }
-`;
-
-export const VideoButton = styled.div`
-  display: flex;
-  align-self: center;
-  align-items: center;
-  margin: 40px 0px;
-  .videoButtonText {
-    text-transform: uppercase;
-    color: inherit;
-    margin-left: 10px;
-    letter-spacing: 3px;
-    font-weight: 500;
-    position: relative;
-
-    &::after {
-      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      right: 0;
-      width: 0;
-      height: 1px;
-      background-color: inherit;
-    }
-  }
-
-  &:hover {
-    cursor: pointer;
-    .videoButtonText::after {
-      width: 100%;
-      right: auto;
-      left: 0;
     }
   }
 `;
