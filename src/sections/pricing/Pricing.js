@@ -23,7 +23,7 @@ function Pricing() {
               price="0"
               frequency="mo"
             >
-              <Paragraph color="inherit" margin="30px 0px 0px 0px">
+              <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 03 projects
               </Paragraph>
               <Paragraph color="inherit" margin="10px 0px 0px 0px">
@@ -47,7 +47,7 @@ function Pricing() {
               frequency="mo"
               isPopular="true"
             >
-              <Paragraph color="inherit" margin="30px 0px 0px 0px">
+              <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 10 projects
               </Paragraph>
               <Paragraph color="inherit" margin="10px 0px 0px 0px">
@@ -69,7 +69,7 @@ function Pricing() {
               price="29"
               frequency="mo"
             >
-              <Paragraph color="inherit" margin="30px 0px 0px 0px">
+              <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 50 projects
               </Paragraph>
               <Paragraph color="inherit" margin="10px 0px 0px 0px">
@@ -91,7 +91,7 @@ function Pricing() {
               price="49"
               frequency="mo"
             >
-              <Paragraph color="inherit" margin="30px 0px 0px 0px">
+              <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 Unlimited projects
               </Paragraph>
               <Paragraph color="inherit" margin="10px 0px 0px 0px">

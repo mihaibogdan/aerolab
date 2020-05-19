@@ -50,6 +50,7 @@ export const Heading5 = styled.h5`
   font-weight: 500;
   line-height: 1.23;
   margin: 24px 0px 12px 0px;
+  ${(props) => props.margin && `margin: ${props.margin}`}
   color: ${({ theme }) => rgba(theme.palette.neutral.black, 0.8)};
   ${(props) => props.color && `color: ${props.color}`};
 

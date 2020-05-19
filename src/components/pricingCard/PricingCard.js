@@ -35,7 +35,7 @@ function PricingCard({
         </PopularChoiceCorner>
       )}
       <CardEmoji>{cardEmoji}</CardEmoji>
-      <Heading5>{cardTitle}</Heading5>
+      <Heading5 margin="8px 0px 4px 0px">{cardTitle}</Heading5>
       <Price>
         <Currency>{currency}</Currency>
         <Heading1 color={rgba(theme.palette.neutral.black, 0.8)} fontWeight="300">
