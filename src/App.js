@@ -11,6 +11,7 @@ import Home from './sections/home';
 import About from './sections/about';
 import Platform from './sections/platform';
 import ContactDirector from './sections/contact-director';
+import Pricing from './sections/pricing';
 import Team from './sections/team';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
@@ -39,6 +40,7 @@ function App() {
       <About />
       <Platform />
       <ContactDirector />
+      <Pricing />
       <Team />
       <Contact />
       <Footer />

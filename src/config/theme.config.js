@@ -6,6 +6,10 @@ const theme = {
       light: '#7c82fe',
     },
 
+    secondary: {
+      orange: '#ee7455',
+    },
+
     accent: '#4fce5d',
 
     neutral: {
