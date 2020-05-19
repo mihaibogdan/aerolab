@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import { rgba } from 'polished';
 
 import DownloadSectionBackground from 'assets/img/platform/download-section-bg.png';
 
 export const Section = styled.section`
-  /* background: ${({ theme }) => rgba(theme.palette.primary.light, 0.064)}; */
   padding-top: 100px;
 `;
 
