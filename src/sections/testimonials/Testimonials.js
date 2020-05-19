@@ -2,7 +2,6 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 
-import { Paragraph } from 'assets/styles/typography';
 import Avatar1 from 'assets/img/testimonials/avatar1.png';
 import Avatar2 from 'assets/img/testimonials/avatar2.png';
 import Avatar3 from 'assets/img/testimonials/avatar3.png';
