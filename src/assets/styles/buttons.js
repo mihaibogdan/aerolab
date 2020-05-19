@@ -65,7 +65,7 @@ export const BorderButton = styled.button`
   letter-spacing: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.palette.primary.default};
-  background-image: ${({ theme }) => theme.palette.neutral.white};
+  background-color: ${({ theme }) => theme.palette.neutral.white};
   background-size: 200% auto;
   background-position: 0;
   border: 1px solid ${({ theme }) => theme.palette.primary.default};

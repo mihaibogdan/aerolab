@@ -32,6 +32,7 @@ export const CenteredTitle = styled.div`
 
 export const PricingCardGrid = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin: 80px 0px;
 
   .pricingCard {
