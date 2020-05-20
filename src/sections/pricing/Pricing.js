@@ -45,7 +45,7 @@ function Pricing() {
               currency="$"
               price="19"
               frequency="mo"
-              isPopular="true"
+              isPopular
             >
               <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 10 projects
