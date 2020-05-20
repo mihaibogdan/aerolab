@@ -14,7 +14,7 @@ import ContactDirector from './sections/contact-director';
 import Pricing from './sections/pricing';
 import Team from './sections/team';
 import Testimonials from './sections/testimonials';
-import Seo from './sections/Seo';
+import Seo from './sections/seo';
 import Clients from './sections/clients';
 import Contact from './sections/contact';
 import Footer from './sections/footer';

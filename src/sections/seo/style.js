@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Section = styled.section`
   padding: 60px 0;
@@ -34,13 +35,38 @@ export const AccordionItems = styled.div`
   margin: 0 auto;
 `;
 
-export const AccordionItem = styled.div``;
+export const AccordionItem = styled.div`
+  box-shadow: 0 0 40px 10px rgba(89, 69, 230, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .contentWrapper.openSection {
+    height: 0px !important;
+    overflow: hidden;
+  }
+
+  .contentWrapper.displayNone {
+    display: none;
+  }
+`;
 
 export const AccordionTitle = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 19px 30px;
-  background-color: red;
+  color: ${({ theme }) => rgba(theme.palette.primary.dark, 0.6)};
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &:hover {
+    color: ${({ theme }) => rgba(theme.palette.primary.default, 1)};
+    cursor: pointer;
+  }
+
+  h6,
+  svg {
+    pointer-events: none;
+  }
 `;
 
 export const AccordionTitleWrapper = styled.div`
@@ -49,13 +75,8 @@ export const AccordionTitleWrapper = styled.div`
   padding: 19px 30px;
 `;
 
-export const AccordionContentWrapper = styled.div`
-  overflow: hidden;
-  height: 0;
-`;
-
 export const AccordionContent = styled.div`
   padding: 23px 30px 29px;
-  display: none;
   color: ${({ theme }) => theme.palette.neutral.grey};
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
