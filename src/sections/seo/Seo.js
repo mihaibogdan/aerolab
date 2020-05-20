@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Heading2, Heading6, Paragraph } from 'assets/styles/typography';
 import PlusIcon from 'assets/img/icons/plus-icon.svg';
-import MinusIcon from 'assets/img/icons/minus-icon.svg';
+// import MinusIcon from 'assets/img/icons/minus-icon.svg';
 
 import {
   Section,
@@ -18,23 +18,28 @@ function Seo() {
   const showItem = (e) => {
     e.persist();
     const wrapper = e.target.parentNode.querySelector('.contentWrapper');
-
-    if (wrapper.classList.contains('openSection')) {
-      setTimeout(() => wrapper.classList.toggle('openSection'), 0);
-      wrapper.classList.toggle('displayNone');
-
-      wrapper.style.height = `${wrapper.firstChild.offsetHeight}px`;
+    const item = e.target.parentNode;
+    if (!wrapper.classList.contains('displayBlock')) {
+      item.style.height = `${item.offsetHeight}px`;
       setTimeout(() => {
-        wrapper.style.height = 'auto';
-        console.log(wrapper.offsetHeight);
+        wrapper.classList.toggle('displayBlock');
+      }, 0);
+      setTimeout(() => {
+        item.style.height = `${item.offsetHeight + wrapper.offsetHeight}px`;
+      }, 0);
+      setTimeout(() => {
+        item.style.height = 'auto';
       }, 300);
     } else {
-      wrapper.style.height = `${wrapper.offsetHeight}px`;
-      console.log(wrapper.offsetHeight);
+      item.style.height = `${item.offsetHeight}px`;
 
-      setTimeout(() => wrapper.classList.toggle('openSection'), 0);
-      setTimeout(() => wrapper.classList.toggle('displayNone'), 300);
-      console.log(wrapper.offsetHeight);
+      setTimeout(() => {
+        item.style.height = `${item.offsetHeight - wrapper.offsetHeight}px`;
+      }, 0);
+      setTimeout(() => {
+        wrapper.classList.toggle('displayBlock');
+        item.style.height = 'auto';
+      }, 300);
     }
   };
 

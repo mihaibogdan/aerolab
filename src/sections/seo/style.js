@@ -39,15 +39,15 @@ export const AccordionItem = styled.div`
   box-shadow: 0 0 40px 10px rgba(89, 69, 230, 0.05);
   border-radius: 5px;
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 60px;
+  transition: height 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-  .contentWrapper.openSection {
-    height: 0px !important;
-    overflow: hidden;
+  .contentWrapper {
+    display: none;
   }
 
-  .contentWrapper.displayNone {
-    display: none;
+  .contentWrapper.displayBlock {
+    display: block;
   }
 `;
 
@@ -78,5 +78,4 @@ export const AccordionTitleWrapper = styled.div`
 export const AccordionContent = styled.div`
   padding: 23px 30px 29px;
   color: ${({ theme }) => theme.palette.neutral.grey};
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
