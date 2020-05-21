@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -41,7 +42,9 @@ function Navbar({ theme }) {
   return (
     <>
       <Nav className={`${scrollStarted ? 'scrolledNavbar' : ''}`}>
-        <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
+        <Link to="/">
+          <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
+        </Link>
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
           <ScrollLink hashSpy to="hero" smooth color="inherit" fontSize="14px">

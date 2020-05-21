@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 
-import { Heading2, Heading4, Paragraph, NavLink } from 'assets/styles/typography';
+import { Heading2, Heading4, Paragraph, NavLinkButton } from 'assets/styles/typography';
 import Firefox from 'assets/img/clients/firefox.png';
 import Bullfit from 'assets/img/clients/bullfit.png';
 import Adroll from 'assets/img/clients/adroll.png';
@@ -89,14 +89,14 @@ function Clients() {
                 Lad dir jetzt unsere Case-Studies runter und überzeuge dich selbst von der Qualität
                 unserer Arbeit.
               </Paragraph>
-              <NavLink
+              <NavLinkButton
                 to="/case-studies"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="400"
               >
                 Get AeroLand
-              </NavLink>
+              </NavLinkButton>
             </DownloadCard>
 
             <MacbookImage

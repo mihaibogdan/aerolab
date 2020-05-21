@@ -25,7 +25,8 @@ export const Heading2 = styled.h2`
   color: ${({ theme }) => theme.palette.primary.dark};
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
-
+  ${(props) => props.textAlign && `text-align: ${props.textAlign}`}
+  
   @media screen and (max-width: 768px) {
     font-size: 34px;
   }
@@ -119,6 +120,37 @@ export const Link = styled.a`
   }
 `;
 
+export const NavLink = styled(RouterLink)`
+  color: ${({ theme }) => theme.palette.accent};
+  ${(props) => props.color && `color: ${props.color};`}
+  font-size: 15px;
+  ${(props) => props.fontSize && `font-size: ${props.fontSize}`}
+  font-weight: 500;
+  ${(props) => props.fontWeight && `font-weight: ${props.fontWeight}`}
+  margin: 0;
+  ${(props) => props.margin && `margin: ${props.margin}`}
+  position: relative;
+
+  &::after {
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+`;
+
 export const LinkButton = styled.a`
   color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color};`}
@@ -143,7 +175,7 @@ export const LinkButton = styled.a`
   }
 `;
 
-export const NavLink = styled(RouterLink)`
+export const NavLinkButton = styled(RouterLink)`
   color: ${({ theme }) => theme.palette.neutral.white};
   ${(props) => props.color && `color: ${props.color};`}
   font-size: 15px;
