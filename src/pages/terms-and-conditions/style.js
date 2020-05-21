@@ -17,11 +17,12 @@ export const Container = styled.div`
 
   ${Heading2} {
     color: ${({ theme }) => lighten(0.2, theme.palette.neutral.black)};
+    margin-bottom: 20px;
   }
 
   ${Heading4} {
     color: ${({ theme }) => lighten(0.2, theme.palette.neutral.black)};
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 
   ${Paragraph} {
