@@ -41,6 +41,7 @@ export const AccordionItem = styled.div`
   overflow: hidden;
   height: 60px;
   transition: height 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-bottom: 20px;
 
   .contentWrapper {
     display: none;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Heading2, Heading6, Paragraph } from 'assets/styles/typography';
 import PlusIcon from 'assets/img/icons/plus-icon.svg';
@@ -15,31 +15,52 @@ import {
 } from './style';
 
 function Seo() {
-  const showItem = (e) => {
-    e.persist();
-    const wrapper = e.target.parentNode.querySelector('.contentWrapper');
-    const item = e.target.parentNode;
-    if (!wrapper.classList.contains('displayBlock')) {
-      item.style.height = `${item.offsetHeight}px`;
-      setTimeout(() => {
-        wrapper.classList.toggle('displayBlock');
-      }, 0);
-      setTimeout(() => {
-        item.style.height = `${item.offsetHeight + wrapper.offsetHeight}px`;
-      }, 0);
-      setTimeout(() => {
-        item.style.height = 'auto';
-      }, 300);
-    } else {
-      item.style.height = `${item.offsetHeight}px`;
+  const [isInAnimation, setIsInAnimation] = useState(false);
 
-      setTimeout(() => {
-        item.style.height = `${item.offsetHeight - wrapper.offsetHeight}px`;
-      }, 0);
-      setTimeout(() => {
-        wrapper.classList.toggle('displayBlock');
-        item.style.height = 'auto';
-      }, 300);
+  const show = (accordionItem, accordionContent) => {
+    accordionItem.style.height = `${accordionItem.offsetHeight}px`;
+    accordionItem.classList.add('active');
+
+    setTimeout(() => {
+      accordionContent.classList.add('displayBlock');
+      accordionItem.style.height = `${
+        accordionItem.offsetHeight + accordionContent.offsetHeight
+      }px`;
+    }, 0);
+    setTimeout(() => {
+      accordionItem.style.height = 'auto';
+      setIsInAnimation(false);
+    }, 300);
+  };
+
+  const hide = (accordionItem, accordionContent) => {
+    accordionItem.style.height = `${accordionItem.offsetHeight}px`;
+    accordionItem.classList.remove('active');
+
+    setTimeout(() => {
+      accordionItem.style.height = `${
+        accordionItem.offsetHeight - accordionContent.offsetHeight
+      }px`;
+    }, 0);
+    setTimeout(() => {
+      accordionContent.classList.remove('displayBlock');
+      accordionItem.style.height = 'auto';
+      setIsInAnimation(false);
+    }, 300);
+  };
+
+  const toggle = (e) => {
+    if (isInAnimation) return;
+
+    e.persist();
+    const accordionItem = e.target.parentNode;
+    const accordionContent = accordionItem.querySelector('.contentWrapper');
+
+    setIsInAnimation(true);
+    if (!accordionItem.classList.contains('active')) {
+      show(accordionItem, accordionContent);
+    } else {
+      hide(accordionItem, accordionContent);
     }
   };
 
@@ -52,7 +73,33 @@ function Seo() {
           </CenteredTitle>
           <AccordionItems>
             <AccordionItem>
-              <AccordionTitle onClick={showItem}>
+              <AccordionTitle onClick={toggle}>
+                <Heading6 color="inherit">Completely responsive</Heading6>
+                <PlusIcon width="20px" />
+              </AccordionTitle>
+              <AccordionContent className="contentWrapper">
+                <Paragraph color="inherit">
+                  AeroLand appears professional in design and responsive in performance. It proves
+                  to be highly customizable and efficient for landing site building. Engage yourself
+                  in the most effortless and well-appointed process with AeroLand.
+                </Paragraph>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionTitle onClick={toggle}>
+                <Heading6 color="inherit">Completely responsive</Heading6>
+                <PlusIcon width="20px" />
+              </AccordionTitle>
+              <AccordionContent className="contentWrapper">
+                <Paragraph color="inherit">
+                  AeroLand appears professional in design and responsive in performance. It proves
+                  to be highly customizable and efficient for landing site building. Engage yourself
+                  in the most effortless and well-appointed process with AeroLand.
+                </Paragraph>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionTitle onClick={toggle}>
                 <Heading6 color="inherit">Completely responsive</Heading6>
                 <PlusIcon width="20px" />
               </AccordionTitle>
