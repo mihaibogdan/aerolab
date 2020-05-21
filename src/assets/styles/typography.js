@@ -65,6 +65,7 @@ export const Heading6 = styled.h6`
   font-weight: 500;
   line-height: 1.23;
   margin: 0;
+  ${(props) => props.margin && `margin: ${props.margin}`}
   color: ${({ theme }) => rgba(theme.palette.primary.dark, 0.6)};
   ${(props) => props.color && `color: ${props.color}`};
   text-align: center;
