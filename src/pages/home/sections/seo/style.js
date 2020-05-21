@@ -33,6 +33,7 @@ export const AccordionItems = styled.div`
   flex-direction: column;
   width: 600px;
   margin: 0 auto;
+  user-select: none;
 `;
 
 export const AccordionItem = styled.div`

@@ -1,23 +1,15 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import theme from './config/theme.config';
 import GlobalStyle from './assets/styles/globalStyles';
-import Navbar from './components/navbar';
-import Home from './sections/home';
-import About from './sections/about';
-import Platform from './sections/platform';
-import ContactDirector from './sections/contact-director';
-import Pricing from './sections/pricing';
-import Team from './sections/team';
-import Testimonials from './sections/testimonials';
-import Seo from './sections/seo';
-import Clients from './sections/clients';
-import Contact from './sections/contact';
-import Footer from './sections/footer';
+
+import Home from './pages/home';
+import CaseStudies from './pages/case_studies';
 
 AOS.init({
   once: true,
@@ -36,18 +28,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Navbar />
-      <Home />
-      <Clients />
-      <About />
-      <Platform />
-      <ContactDirector />
-      <Pricing />
-      <Team />
-      <Testimonials />
-      <Seo />
-      <Contact />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/case-studies">
+            <CaseStudies />
+          </Route>
+        </Switch>
+      </Router>
     </ThemeProvider>
   );
 }

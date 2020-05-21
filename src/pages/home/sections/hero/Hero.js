@@ -17,11 +17,11 @@ import {
   WaveAnimation,
 } from './style';
 
-function Home({ theme }) {
+function Hero({ theme }) {
   return (
     <>
-      <Element name="home">
-        <HeroSection id="home">
+      <Element name="hero">
+        <HeroSection id="hero">
           <LeftSection>
             <TextBlock>
               <Heading1>
@@ -79,8 +79,8 @@ function Home({ theme }) {
   );
 }
 
-Home.propTypes = {
+Hero.propTypes = {
   theme: PropTypes.object,
 };
 
-export default withTheme(Home);
+export default withTheme(Hero);

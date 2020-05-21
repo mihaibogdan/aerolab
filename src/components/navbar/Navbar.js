@@ -44,7 +44,7 @@ function Navbar({ theme }) {
         <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
-          <ScrollLink hashSpy to="home" smooth color="inherit" fontSize="14px">
+          <ScrollLink hashSpy to="hero" smooth color="inherit" fontSize="14px">
             START
           </ScrollLink>
           <ScrollLink
