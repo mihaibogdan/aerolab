@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rgba, darken } from 'polished';
 
-import { Heading6, Paragraph, Link } from 'assets/styles/typography';
+import { Heading6, Paragraph, NavLink } from 'assets/styles/typography';
 
 export const Section = styled.section`
   background: ${({ theme }) => darken(0.1, theme.palette.primary.dark)};
@@ -47,7 +47,7 @@ export const Logo = styled.img`
   margin-bottom: 30px;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled(NavLink)`
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 `;
@@ -136,7 +136,7 @@ export const TweetBox = styled.div`
   }
 `;
 
-export const TweetLink = styled(Link)`
+export const TweetLink = styled(NavLink)`
   font-weight: 400;
   transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;

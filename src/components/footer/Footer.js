@@ -50,8 +50,8 @@ function Footer({ theme }) {
           <Column>
             <Heading6 color={theme.palette.neutral.white}>Quick links</Heading6>
             <FooterLink href="http://google.com">Pick up locations</FooterLink>
-            <FooterLink href="http://google.com">Terms of Payment</FooterLink>
-            <FooterLink href="http://google.com">Privacy Policy</FooterLink>
+            <FooterLink to="/terms-and-conditions">Terms of Payment</FooterLink>
+            <FooterLink to="/terms-and-conditions">Privacy Policy</FooterLink>
             <FooterLink href="http://google.com">Where to find us</FooterLink>
           </Column>
           <Column>
@@ -84,13 +84,16 @@ function Footer({ theme }) {
           </Paragraph>
 
           <SocialIcons>
-            <SocialIcon target="_blank" href="http://facebook.com">
+            <SocialIcon
+              target="_blank"
+              href="https://www.facebook.com/Rent-A-Developer-108237200556773/"
+            >
               <FacebookIcon width="18px" />
             </SocialIcon>
             <SocialIcon target="_blank" href="https://twitter.com">
               <TwitterIcon width="18px" />
             </SocialIcon>
-            <SocialIcon target="_blank" href="https://www.instagram.com">
+            <SocialIcon target="_blank" href="https://www.instagram.com/rent_a_developer/">
               <InstagramIcon width="18px" />
             </SocialIcon>
           </SocialIcons>
