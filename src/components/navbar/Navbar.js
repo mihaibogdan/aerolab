@@ -9,7 +9,7 @@ import LightLogo from 'assets/img/hero/light-logo.png';
 import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 
-function Navbar({ theme }) {
+function Navbar({ theme, className }) {
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
   const [heightMenu, setHeightMenu] = useState(0);
   const menuItemsEl = useRef(null);
@@ -119,6 +119,7 @@ function Navbar({ theme }) {
 
 Navbar.propTypes = {
   theme: PropTypes.object,
+  className: PropTypes.string,
 };
 
 export default withTheme(Navbar);
