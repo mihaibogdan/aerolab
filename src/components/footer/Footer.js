@@ -36,23 +36,23 @@ function Footer({ theme }) {
             <Paragraph color="rgba(255, 255, 255, 0.7)">
               58 Howard Street #2 San Francisco, CA 941
             </Paragraph>
-            <FooterLink href="http://google.com">contact@aereland.com</FooterLink>
-            <FooterLink href="http://google.com">SEO seite</FooterLink>
-            <FooterLink href="http://google.com">Mobile app</FooterLink>
+            <FooterLink to="http://google.com">contact@aereland.com</FooterLink>
+            <FooterLink to="http://google.com">SEO seite</FooterLink>
+            <FooterLink to="http://google.com">Mobile app</FooterLink>
           </Column>
           <Column>
             <Heading6 color={theme.palette.neutral.white}>Mehr über uns</Heading6>
-            <FooterLink href="http://google.com">About us</FooterLink>
-            <FooterLink href="http://google.com">Before you go</FooterLink>
-            <FooterLink href="http://google.com">Online check in</FooterLink>
-            <FooterLink href="http://google.com">FAQ</FooterLink>
+            <FooterLink to="http://google.com">About us</FooterLink>
+            <FooterLink to="http://google.com">Before you go</FooterLink>
+            <FooterLink to="http://google.com">Online check in</FooterLink>
+            <FooterLink to="http://google.com">FAQ</FooterLink>
           </Column>
           <Column>
             <Heading6 color={theme.palette.neutral.white}>Quick links</Heading6>
-            <FooterLink href="http://google.com">Pick up locations</FooterLink>
+            <FooterLink to="http://google.com">Pick up locations</FooterLink>
             <FooterLink to="/terms-and-conditions">Terms of Payment</FooterLink>
             <FooterLink to="/terms-and-conditions">Privacy Policy</FooterLink>
-            <FooterLink href="http://google.com">Where to find us</FooterLink>
+            <FooterLink to="http://google.com">Where to find us</FooterLink>
           </Column>
           <Column>
             <Tweet>
@@ -60,8 +60,8 @@ function Footer({ theme }) {
                 <Paragraph color="inherit">
                   &quot;The ocean never ceases to amaze! Feature: Ben Klea
                 </Paragraph>
-                <TweetLink href="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
-                <TweetLink href="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
+                <TweetLink to="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
+                <TweetLink to="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
               </TweetBox>
               <TweetInfo>
                 <TwitterIcon width="18" color={theme.palette.primary.default} />

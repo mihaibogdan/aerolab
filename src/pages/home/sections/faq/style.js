@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Section = styled.section`
   padding: 60px 0;
+  background: ${({ theme }) => rgba(theme.palette.primary.light, 0.064)};
 `;
 
 export const Container = styled.div`

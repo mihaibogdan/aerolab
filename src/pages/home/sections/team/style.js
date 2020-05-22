@@ -3,7 +3,6 @@ import { rgba } from 'polished';
 
 export const Section = styled.section`
   background: ${({ theme }) => theme.palette.gradients.background};
-  margin-top: 80px;
 `;
 
 export const Container = styled.div`
