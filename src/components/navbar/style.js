@@ -41,7 +41,10 @@ export const ScrollLink = styled(Link)`
 `;
 
 export const MenuItems = styled.div`
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   ${ScrollLink} {
     margin: 0px 26px;
   }
@@ -79,6 +82,10 @@ export const Nav = styled.nav`
   color: white;
   box-shadow: 0 0 0 0 rgba(51, 51, 51, 0.1);
   transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  a.hire-us {
+    margin-left: auto;
+  }
 
   &.scrolledNavbar {
     background-color: ${({ theme }) => theme.palette.neutral.white};

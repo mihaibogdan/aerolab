@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rgba, darken } from 'polished';
 
-import { Heading6, Paragraph, NavLink } from 'assets/styles/typography';
+import { Heading6, Paragraph, Link, NavLink } from 'assets/styles/typography';
 
 export const Section = styled.section`
   background: ${({ theme }) => darken(0.1, theme.palette.primary.dark)};
@@ -120,6 +120,7 @@ export const TweetBox = styled.div`
   align-items: flex-start;
   margin-bottom: 25px;
   font-size: 14px;
+  min-width: 250px;
 
   &:before {
     content: '';
@@ -136,7 +137,7 @@ export const TweetBox = styled.div`
   }
 `;
 
-export const TweetLink = styled(NavLink)`
+export const TweetLink = styled(Link)`
   font-weight: 400;
   transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
@@ -153,14 +154,14 @@ export const TweetLink = styled(NavLink)`
 export const TweetInfo = styled.div`
   display: flex;
   align-items: flex-start;
-  padding-left: 22px;
 
   ${Column} {
     margin-left: 14px;
   }
 
-  svg {
+  img {
     margin-top: 3px;
+    max-width: 50px;
   }
 `;
 

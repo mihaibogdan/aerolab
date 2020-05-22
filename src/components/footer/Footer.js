@@ -7,6 +7,7 @@ import FacebookIcon from 'assets/img/team/facebook.svg';
 import TwitterIcon from 'assets/img/team/twitter.svg';
 import InstagramIcon from 'assets/img/team/instagram.svg';
 import LogoImg from 'assets/img/hero/light-logo.png';
+import Avatar1 from 'assets/img/team/avatar1.png';
 import {
   Section,
   Container,
@@ -57,18 +58,14 @@ function Footer({ theme }) {
           <Column>
             <Tweet>
               <TweetBox>
-                <Paragraph color="inherit">
-                  &quot;The ocean never ceases to amaze! Feature: Ben Klea
-                </Paragraph>
-                <TweetLink to="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
-                <TweetLink to="https://t.co/jSRMsZAdPW">https://t.co/jSRMsZAdPW</TweetLink>
+                <Paragraph color="inherit">&quot;Want to meet us?</Paragraph>
+                <TweetLink href="https://wa.me/491702988400?text=Hi%20there!">
+                  Whatsapp Chat Starten
+                </TweetLink>
               </TweetBox>
               <TweetInfo>
-                <TwitterIcon width="18" color={theme.palette.primary.default} />
-                <Column>
-                  <TweetUser>Unsplash</TweetUser>
-                  <TweetDate>May 07, 2020</TweetDate>
-                </Column>
+                {/* <TwitterIcon width="18" color={theme.palette.primary.default} /> */}
+                <img src={Avatar1} alt="christoph" />
               </TweetInfo>
             </Tweet>
           </Column>
