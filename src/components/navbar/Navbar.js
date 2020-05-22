@@ -16,14 +16,18 @@ function Navbar({ theme }) {
 
   useEffect(() => {
     const checkScrollStarted = () => {
-      if (!scrollStarted) {
-        setScrollStarted(window.scrollY > 10);
-      } else {
-        setScrollStarted(window.scrollY < 11);
-      }
-    };
+      setScrollStarted((prevScrollStarted) => {
+        if (!prevScrollStarted) {
+          if (window.scrollY > 10) {
+            return true;
+          }
+        } else if (window.scrollY < 11) {
+          return false;
+        }
 
-    checkScrollStarted();
+        return prevScrollStarted;
+      });
+    };
 
     window.addEventListener('scroll', checkScrollStarted);
     return () => window.removeEventListener('scroll', checkScrollStarted);
