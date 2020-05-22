@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import { Heading2, Heading6, Paragraph } from 'assets/styles/typography';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
@@ -14,6 +15,10 @@ import Footer from '../../components/footer';
 import { Section, Container, CenteredTitle, CardSection, Card, Image } from './style';
 
 function CaseStudies({ theme }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <NavbarInner />

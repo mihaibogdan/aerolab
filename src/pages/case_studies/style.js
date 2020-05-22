@@ -38,6 +38,12 @@ export const CardSection = styled.div`
 export const Card = styled.div`
   width: calc(33.333% - 30px);
   margin: 15px 15px 30px 15px;
+  @media screen and (max-width: 992px) {
+    width: calc(50% - 30px);
+  }
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 30px);
+  }
 `;
 
 export const Image = styled.img`

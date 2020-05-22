@@ -22,6 +22,9 @@ function Pricing() {
               currency="$"
               price="0"
               frequency="mo"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="200"
             >
               <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 03 projects
@@ -46,6 +49,9 @@ function Pricing() {
               price="19"
               frequency="mo"
               isPopular
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="250"
             >
               <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 10 projects
@@ -68,6 +74,9 @@ function Pricing() {
               currency="$"
               price="29"
               frequency="mo"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="300"
             >
               <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 50 projects
@@ -90,6 +99,9 @@ function Pricing() {
               currency="$"
               price="49"
               frequency="mo"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="350"
             >
               <Paragraph color="inherit" margin="20px 0px 0px 0px">
                 Unlimited projects
