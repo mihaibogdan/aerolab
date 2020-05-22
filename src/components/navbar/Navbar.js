@@ -41,7 +41,7 @@ function Navbar({ theme, className }) {
 
   return (
     <>
-      <Nav className={`${className} ${scrollStarted ? 'scrolledNavbar' : ''}`}>
+      <Nav className={`${scrollStarted ? 'scrolledNavbar' : ''}`}>
         <Link to="/">
           <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
         </Link>
