@@ -32,14 +32,15 @@ export const CenteredTitle = styled.div`
 export const CardSection = styled.div`
   padding: 60px 0;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const Card = styled.div`
-  width: 33.333%;
+  width: calc(33.333% - 30px);
+  margin: 15px 15px 30px 15px;
 `;
 
 export const Image = styled.img`
-  width: 90%;
-  height: auto;
-  align-self: flex-start;
+  width: 100%;
+  align-self: center;
 `;

@@ -9,7 +9,7 @@ import LightLogo from 'assets/img/hero/light-logo.png';
 import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 
-function Navbar({ theme, className }) {
+function Navbar({ theme }) {
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
   const [heightMenu, setHeightMenu] = useState(0);
   const menuItemsEl = useRef(null);
@@ -22,6 +22,8 @@ function Navbar({ theme, className }) {
         setScrollStarted(window.scrollY < 11);
       }
     };
+
+    checkScrollStarted();
 
     window.addEventListener('scroll', checkScrollStarted);
     return () => window.removeEventListener('scroll', checkScrollStarted);
@@ -119,7 +121,6 @@ function Navbar({ theme, className }) {
 
 Navbar.propTypes = {
   theme: PropTypes.object,
-  className: PropTypes.string,
 };
 
 export default withTheme(Navbar);

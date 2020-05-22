@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -9,8 +10,10 @@ import { Nav } from './style';
 function NavbarInner({ theme }) {
   return (
     <>
-      <Nav className="scrolledNavbar">
-        <img src={DarkLogo} alt="" />
+      <Nav>
+        <Link to="/">
+          <img src={DarkLogo} alt="" />
+        </Link>
 
         <LinkButton
           className="hire-us"
@@ -28,7 +31,6 @@ function NavbarInner({ theme }) {
 
 NavbarInner.propTypes = {
   theme: PropTypes.object,
-  className: PropTypes.string,
 };
 
 export default withTheme(NavbarInner);
