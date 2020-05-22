@@ -23,8 +23,6 @@ import {
   TweetBox,
   TweetLink,
   TweetInfo,
-  TweetUser,
-  TweetDate,
 } from './style';
 
 function Footer({ theme }) {
