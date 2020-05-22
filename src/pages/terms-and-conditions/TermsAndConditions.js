@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import Navbar from 'components/navbar';
+import NavbarInner from '../../components/navbar_inner';
 import Footer from 'components/footer';
 import { Heading2, Heading4, Paragraph } from 'assets/styles/typography';
 
@@ -13,7 +13,7 @@ function TermsAndConditions() {
 
   return (
     <>
-      <Navbar />
+      <NavbarInner />
       <Section id="terms-and-conditions">
         <Container>
           <Heading2 textAlign="left">AGB</Heading2>
