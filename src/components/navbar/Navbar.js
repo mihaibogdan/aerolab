@@ -109,7 +109,7 @@ function Navbar({ theme }) {
           color={!scrollStarted ? theme.palette.primary.default : theme.palette.neutral.white}
           backgroundColor={!scrollStarted ? theme.palette.neutral.white : theme.palette.accent}
         >
-          Whatsapp Chat Starten
+          Chat Starten
         </LinkButton>
 
         <HamburgerMenu

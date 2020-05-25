@@ -22,7 +22,7 @@ function NavbarInner({ theme }) {
           color={theme.palette.neutral.white}
           backgroundColor={theme.palette.accent}
         >
-          Whatsapp Chat Starten
+          Chat Starten
         </LinkButton>
       </Nav>
     </>
