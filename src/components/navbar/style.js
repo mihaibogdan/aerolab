@@ -55,6 +55,9 @@ export const MenuItems = styled.div`
 
   @media screen and (max-width: 1200px) {
     height: ${(props) => `${props.heightMenu}px`};
+    position: relative;
+    transform: translateX(0);
+    left: 0;
   }
 `;
 
