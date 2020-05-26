@@ -36,8 +36,8 @@ function Footer({ theme }) {
               58 Howard Street #2 San Francisco, CA 941
             </Paragraph>
             <FooterLink to="http://google.com">contact@aereland.com</FooterLink>
-            <FooterLink to="http://google.com">SEO seite</FooterLink>
-            <FooterLink to="http://google.com">Mobile app</FooterLink>
+            <FooterLink to="/data-protections">Datenschutzerklärung</FooterLink>
+            <FooterLink to="/contact">Impressum</FooterLink>
           </Column>
           <Column>
             <Heading6 color={theme.palette.neutral.white}>Mehr über uns</Heading6>

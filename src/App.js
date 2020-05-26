@@ -10,6 +10,8 @@ import GlobalStyle from './assets/styles/globalStyles';
 
 import Home from './pages/home';
 import CaseStudies from './pages/case_studies';
+import DataProtection from './pages/data-protection';
+import Contact from './pages/contact';
 import TermsAndConditions from './pages/terms-and-conditions';
 
 AOS.init({
@@ -36,6 +38,12 @@ function App() {
           </Route>
           <Route exact path="/case-studies">
             <CaseStudies />
+          </Route>
+          <Route exact path="/data-protections">
+            <DataProtection />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
           </Route>
           <Route exact path="/terms-and-conditions">
             <TermsAndConditions />
