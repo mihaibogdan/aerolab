@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import Footer from 'components/footer';
 import NavbarInner from 'components/navbar_inner';
-import { Heading2, Heading4, Heading6, Paragraph } from 'assets/styles/typography';
+import { Heading2, Heading4, Paragraph } from 'assets/styles/typography';
 
 import { Section, Container } from './style';
 
