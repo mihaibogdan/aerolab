@@ -49,6 +49,10 @@ export const AccordionTitle = styled.div`
   svg {
     pointer-events: none;
   }
+
+  svg {
+    flex-shrink: 0;
+  }
 `;
 
 export const AccordionTitleWrapper = styled.div`

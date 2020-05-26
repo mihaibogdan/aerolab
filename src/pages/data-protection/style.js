@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-import { Heading2, Heading4, Heading6, Paragraph } from 'assets/styles/typography';
+import { Heading2, Heading4, Paragraph } from 'assets/styles/typography';
 
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.palette.neutral.white};
