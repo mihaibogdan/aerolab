@@ -52,6 +52,8 @@ export const AccordionTitle = styled.div`
 
   svg {
     flex-shrink: 0;
+    width: 20px;
+    height: 20px;
   }
 `;
 
