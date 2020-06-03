@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
+import { useWindowSize } from '@reach/window-size';
 
 import Menu from 'assets/img/hero/menu.svg';
 import { LinkButton } from 'assets/styles/typography';
@@ -10,6 +11,7 @@ import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 
 function Navbar({ theme }) {
+  const { width, height } = useWindowSize();
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
   const [heightMenu, setHeightMenu] = useState(0);
   const menuItemsEl = useRef(null);
@@ -47,10 +49,11 @@ function Navbar({ theme }) {
 
   return (
     <>
-      <Nav className={`${scrollStarted ? 'scrolledNavbar' : ''}`}>
+      <Nav className={`${scrollStarted || width < 1200 ? 'scrolledNavbar' : ''}`}>
         <Link to="/">
-          <img src={!scrollStarted ? LightLogo : DarkLogo} alt="" />
+          <img src={!scrollStarted && width > 1200 ? LightLogo : DarkLogo} alt="" />
         </Link>
+        {console.log(width)}
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
           <ScrollLink hashSpy to="hero" smooth color="inherit" fontSize="14px">
@@ -101,13 +104,18 @@ function Navbar({ theme }) {
             ANFRAGE
           </ScrollLink>
         </MenuItems>
-
         <LinkButton
           className="hire-us"
           target="_blank"
           href="https://wa.me/491702988400?text=Hi%20there!"
-          color={!scrollStarted ? theme.palette.primary.default : theme.palette.neutral.white}
-          backgroundColor={!scrollStarted ? theme.palette.neutral.white : theme.palette.accent}
+          color={
+            !scrollStarted && width >= 1200
+              ? theme.palette.primary.default
+              : theme.palette.neutral.white
+          }
+          backgroundColor={
+            !scrollStarted && width >= 1200 ? theme.palette.neutral.white : theme.palette.accent
+          }
         >
           Chat Starten
         </LinkButton>
