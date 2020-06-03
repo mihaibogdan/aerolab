@@ -3,7 +3,8 @@ import { Element } from 'react-scroll';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Heading1, Paragraph, Link, LinkButton } from 'assets/styles/typography';
+import { Heading1, Paragraph } from 'assets/styles/typography';
+import Link from 'components/link';
 import StartupThumb from 'assets/img/hero/startup-thumb.png';
 
 import {
@@ -28,17 +29,19 @@ function Hero({ theme }) {
                 Software-Entwickler <br /> für Deine Agentur!
               </Heading1>
               <Paragraph margin="20px 0px 0px 0px" fontSize="18px">
-                Developer-Lab versorgt Deine Agentur <strong>sofort</strong> und rein nach Bedarf mit
-                hochqualifizierten Software-Entwicklern für die Umsetzung Eurer Projekte für nur <strong>300€ Tagessatz</strong>.
+                Developer-Lab versorgt Deine Agentur <strong>sofort</strong> und rein nach Bedarf
+                mit hochqualifizierten Software-Entwicklern für die Umsetzung Eurer Projekte für nur{' '}
+                <strong>300€ Tagessatz</strong>.
               </Paragraph>
               <CTARow>
-                <LinkButton
+                <Link
+                  button
                   target="_blank"
                   href="https://wa.me/491702988400?text=Hi%20there!"
                   color="white"
                 >
                   Whatsapp Chat Starten
-                </LinkButton>
+                </Link>
                 <QuestionsText>
                   <Paragraph margin="0px 5px 0px 20px" fontWeight="500">
                     Lieber per Email?

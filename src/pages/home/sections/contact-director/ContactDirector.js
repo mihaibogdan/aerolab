@@ -2,8 +2,7 @@ import React from 'react';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Heading2, Heading6, Paragraph, Link, LinkButton } from 'assets/styles/typography';
-import { GradientButton } from 'assets/styles/buttons';
+import { Heading2, Paragraph, LinkButton } from 'assets/styles/typography';
 
 import CheckList from 'assets/img/tab-section/check.svg';
 import FeaturedImage from 'assets/img/tab-section/featured-image.png';
@@ -18,7 +17,6 @@ import {
   CenteredContent,
   FeaturedList,
   FeaturedListItem,
-  LearnMoreRow,
 } from './style';
 
 function ContactDirector({ theme }) {
