@@ -61,6 +61,11 @@ export const TextBlock = styled.div`
   button {
     align-self: flex-start;
   }
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    padding-top: 120px;
+  }
 `;
 
 export const CTARow = styled.div`

@@ -11,7 +11,7 @@ import DarkLogo from 'assets/img/hero/dark-logo.png';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 
 function Navbar({ theme }) {
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
   const [scrollStarted, setScrollStarted] = useState(window.scrollY > 10);
   const [heightMenu, setHeightMenu] = useState(0);
   const menuItemsEl = useRef(null);
@@ -53,7 +53,6 @@ function Navbar({ theme }) {
         <Link to="/">
           <img src={!scrollStarted && width > 1200 ? LightLogo : DarkLogo} alt="" />
         </Link>
-        {console.log(width)}
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
           <ScrollLink to="hero" smooth color="inherit" fontSize="14px">
