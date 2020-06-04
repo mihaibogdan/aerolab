@@ -56,11 +56,10 @@ function Navbar({ theme }) {
         {console.log(width)}
 
         <MenuItems ref={menuItemsEl} heightMenu={heightMenu}>
-          <ScrollLink hashSpy to="hero" smooth color="inherit" fontSize="14px">
+          <ScrollLink to="hero" smooth color="inherit" fontSize="14px">
             START
           </ScrollLink>
           <ScrollLink
-            hashSpy
             to="about"
             smooth
             activeClass="activeLink"
@@ -71,7 +70,6 @@ function Navbar({ theme }) {
             ANGEBOT
           </ScrollLink>
           <ScrollLink
-            hashSpy
             to="platform"
             smooth
             activeClass="activeLink"
@@ -81,19 +79,10 @@ function Navbar({ theme }) {
           >
             ZUSAMMENARBEIT
           </ScrollLink>
-          <ScrollLink
-            hashSpy
-            to="team"
-            smooth
-            activeClass="activeLink"
-            spy
-            color="inherit"
-            fontSize="14px"
-          >
+          <ScrollLink to="team" smooth activeClass="activeLink" spy color="inherit" fontSize="14px">
             TEAM
           </ScrollLink>
           <ScrollLink
-            hashSpy
             to="contact"
             smooth
             activeClass="activeLink"
