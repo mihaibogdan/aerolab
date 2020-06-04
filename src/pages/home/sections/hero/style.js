@@ -65,6 +65,8 @@ export const TextBlock = styled.div`
   @media screen and (max-width: 767px) {
     justify-content: flex-start;
     padding-top: 120px;
+    height: auto;
+    margin-bottom: 50px;
   }
 `;
 
