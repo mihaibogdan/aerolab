@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { Heading1, Paragraph } from 'assets/styles/typography';
 import Link from 'components/link';
 import StartupThumb from 'assets/img/hero/startup-thumb.png';
+import WhatsappIcon from 'assets/img/hero/whatsapp-icon.svg';
 
 import {
   HeroSection,
@@ -13,6 +14,7 @@ import {
   RightSection,
   TextBlock,
   CTARow,
+  WhatsappButtonIcon,
   Image,
   QuestionsText,
   WaveAnimation,
@@ -40,7 +42,10 @@ function Hero({ theme }) {
                   href="https://wa.me/491702988400?text=Hi%20there!"
                   color="white"
                 >
-                  Whatsapp Chat Starten
+                  <WhatsappButtonIcon>
+                    <WhatsappIcon width="24px" />
+                  </WhatsappButtonIcon>
+                  Chat Starten
                 </Link>
                 <QuestionsText>
                   <Paragraph margin="0px 5px 0px 20px" fontWeight="500">

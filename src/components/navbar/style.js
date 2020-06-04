@@ -88,6 +88,7 @@ export const Nav = styled.nav`
 
   a.hire-us {
     margin-left: auto;
+    border-radius: 50px;
   }
 
   &.scrolledNavbar {

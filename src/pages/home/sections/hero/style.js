@@ -78,6 +78,11 @@ export const CTARow = styled.div`
   }
 `;
 
+export const WhatsappButtonIcon = styled.div`
+  margin-right: 8px;
+  display: flex;
+`;
+
 export const QuestionsText = styled.div`
   display: flex;
 

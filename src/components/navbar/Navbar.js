@@ -8,6 +8,7 @@ import Menu from 'assets/img/hero/menu.svg';
 import { LinkButton } from 'assets/styles/typography';
 import LightLogo from 'assets/img/hero/light-logo.png';
 import DarkLogo from 'assets/img/hero/dark-logo.png';
+import WhatsappIcon from 'assets/img/hero/whatsapp-icon.svg';
 import { Nav, MenuItems, HamburgerMenu, ScrollLink } from './style';
 
 function Navbar({ theme }) {
@@ -105,7 +106,7 @@ function Navbar({ theme }) {
             !scrollStarted && width >= 1200 ? theme.palette.neutral.white : theme.palette.accent
           }
         >
-          Chat Starten
+          <WhatsappIcon width="24px" />
         </LinkButton>
 
         <HamburgerMenu
