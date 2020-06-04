@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import CookieConsent from 'components/cookieConsent';
 import theme from './config/theme.config';
 import GlobalStyle from './assets/styles/globalStyles';
 
@@ -32,6 +33,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Router>
+        <CookieConsent />
         <Switch>
           <Route exact path="/">
             <Home />
