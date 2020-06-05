@@ -43,7 +43,7 @@ function Hero({ theme }) {
                   color="white"
                 >
                   <WhatsappButtonIcon>
-                    <WhatsappIcon width="24px" />
+                    <WhatsappIcon width="24px" height="24px" />
                   </WhatsappButtonIcon>
                   Chat Starten
                 </Link>

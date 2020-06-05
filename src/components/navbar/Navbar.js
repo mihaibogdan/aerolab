@@ -106,7 +106,7 @@ function Navbar({ theme }) {
             !scrollStarted && width >= 1200 ? theme.palette.neutral.white : theme.palette.accent
           }
         >
-          <WhatsappIcon width="24px" />
+          <WhatsappIcon width="24px" height="24px" />
         </LinkButton>
 
         <HamburgerMenu
