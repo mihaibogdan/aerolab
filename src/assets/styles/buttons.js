@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const SolidButton = styled.button`
   padding: 18px 36px;
@@ -54,6 +55,13 @@ export const GradientButton = styled.button`
 
   @media screen and (max-width: 560px) {
     width: 100%;
+  }
+
+  &[disabled] {
+    background-color: ${({ theme }) => rgba(theme.palette.neutral.grey, 0.2)};
+    color: ${({ theme }) => rgba(theme.palette.neutral.grey, 0.4)};
+    background-image: none;
+    cursor: wait;
   }
 `;
 
