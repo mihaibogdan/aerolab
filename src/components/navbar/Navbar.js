@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 import { useWindowSize } from '@reach/window-size';
@@ -34,6 +36,13 @@ function Navbar({ theme }) {
 
     window.addEventListener('scroll', checkScrollStarted);
     return () => window.removeEventListener('scroll', checkScrollStarted);
+  }, []);
+
+  useEffect(() => {
+    let { hash } = window.location;
+    hash = hash?.substr(1);
+
+    scroller.scrollTo(hash);
   }, []);
 
   const calcHeight = () => {

@@ -14,7 +14,8 @@ import Footer from '../../components/footer';
 
 function Home() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const { hash } = window.location;
+    !hash && window.scrollTo(0, 0);
   }, []);
 
   return (
