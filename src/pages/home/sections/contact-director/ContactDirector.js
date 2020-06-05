@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import { Heading2, Paragraph, LinkButton } from 'assets/styles/typography';
 
 import CheckList from 'assets/img/tab-section/check.svg';
+import WhatsappIcon from 'assets/img/hero/whatsapp-icon.svg';
+
 import FeaturedImage from 'assets/img/tab-section/featured-image.png';
 import {
   Section,
@@ -13,6 +15,7 @@ import {
   TabContent,
   LeftSection,
   RightSection,
+  WhatsappButtonIcon,
   TabImage,
   CenteredContent,
   FeaturedList,
@@ -97,7 +100,10 @@ function ContactDirector({ theme }) {
                   href="https://wa.me/491702988400?text=Hi%20there!"
                   color="white"
                 >
-                  Whatsapp Chat Starten
+                  <WhatsappButtonIcon>
+                    <WhatsappIcon width="24px" height="24px" />
+                  </WhatsappButtonIcon>
+                  Chat Starten
                 </LinkButton>
               </CenteredContent>
             </RightSection>

@@ -163,6 +163,7 @@ export const LinkButton = styled.a`
   ${(props) => props.margin && `margin: ${props.margin}`}
   position: relative;
   display: flex;
+  width: fit-content;
 
   background-color: ${({ theme }) => theme.palette.accent};
   ${(props) => props.backgroundColor && `background-color: ${props.backgroundColor};`}
