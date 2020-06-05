@@ -50,7 +50,13 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs1} />
+              <a
+                href="https://developer-lab.de/assets/cases/Car-Configurator-Peugeot-Citroen.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image src={cs1} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/Car-Configurator-Peugeot-Citroen.pdf"
@@ -66,7 +72,13 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs2} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/philips.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs2} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/philips.pdf"
@@ -81,7 +93,13 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs3} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/bnp-paribas-online-banking.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs3} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/bnp-paribas-online-banking.pdf"
@@ -96,7 +114,13 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs4} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/vw.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs4} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/vw.pdf"
@@ -112,7 +136,13 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs5} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/bnp-paribas-corporate-banking.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs5} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/bnp-paribas-corporate-banking.pdf"
@@ -127,7 +157,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs6} />
+              <a target="_blank" href="https://medistoric.ro/" rel="noopener noreferrer">
+                <Image src={cs6} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://medistoric.ro/"
@@ -148,7 +180,13 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs7} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/bnp-paribas-mobile-banking.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs7} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/bnp-paribas-mobile-banking.pdf"
@@ -163,7 +201,13 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs8} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/raiffeisen.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs8} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/raiffeisen.pdf"
@@ -178,7 +222,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs9} />
+              <a target="_blank" href="https://runlive.fit/" rel="noopener noreferrer">
+                <Image src={cs9} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://runlive.fit/"
@@ -194,7 +240,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs10} />
+              <a target="_blank" href="https://heriapro.com/" rel="noopener noreferrer">
+                <Image src={cs10} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://heriapro.com/"
@@ -209,7 +257,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs11} />
+              <a target="_blank" href="https://www.nickis.com" rel="noopener noreferrer">
+                <Image src={cs11} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.nickis.com"
@@ -224,7 +274,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs12} />
+              <a target="_blank" href="https://www.askdata.com" rel="noopener noreferrer">
+                <Image src={cs12} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.askdata.com"
@@ -244,7 +296,9 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs13} />
+              <a target="_blank" href="https://www.ohhluilu.com/" rel="noopener noreferrer">
+                <Image src={cs13} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.ohhluilu.com/"
@@ -259,7 +313,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs14} />
+              <a target="_blank" href="https://www.nberg.de/" rel="noopener noreferrer">
+                <Image src={cs14} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.nberg.de/"
@@ -274,7 +330,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs15} />
+              <a target="_blank" href="https://www.doersoflondon.com/" rel="noopener noreferrer">
+                <Image src={cs15} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.doersoflondon.com/"
@@ -289,7 +347,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs16} />
+              <a target="_blank" href="https://ernestleoty.com/" rel="noopener noreferrer">
+                <Image src={cs16} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://ernestleoty.com/"
@@ -308,7 +368,9 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs17} />
+              <a target="_blank" href="https://trinkform.de/" rel="noopener noreferrer">
+                <Image src={cs17} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://trinkform.de/"
@@ -323,7 +385,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs18} />
+              <a target="_blank" href="https://www.vidima.de/" rel="noopener noreferrer">
+                <Image src={cs18} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.vidima.de/"
@@ -338,7 +402,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs19} />
+              <a target="_blank" href="https://www.agent25.de/" rel="noopener noreferrer">
+                <Image src={cs19} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.agent25.de/"
@@ -357,7 +423,9 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs20} />
+              <a target="_blank" href="https://waffen-baumgartner.com/" rel="noopener noreferrer">
+                <Image src={cs20} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://waffen-baumgartner.com/"
@@ -372,7 +440,9 @@ function CaseStudies({ theme }) {
             </Card>
 
             <Card>
-              <Image src={cs22} />
+              <a target="_blank" href="https://shop.3d-model.com/" rel="noopener noreferrer">
+                <Image src={cs22} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://shop.3d-model.com/"
@@ -391,7 +461,9 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs25} />
+              <a target="_blank" href="https://www.sportcenter-hahn.de/" rel="noopener noreferrer">
+                <Image src={cs25} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://www.sportcenter-hahn.de/"
@@ -405,7 +477,9 @@ function CaseStudies({ theme }) {
               </Paragraph>
             </Card>
             <Card>
-              <Image src={cs26} />
+              <a target="_blank" href="https://autopflege-gruenwald.de/" rel="noopener noreferrer">
+                <Image src={cs26} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://autopflege-gruenwald.de/"
@@ -419,7 +493,9 @@ function CaseStudies({ theme }) {
               </Paragraph>
             </Card>
             <Card>
-              <Image src={cs23} />
+              <a target="_blank" href="https://karolinwappler.de/" rel="noopener noreferrer">
+                <Image src={cs23} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://karolinwappler.de/"
@@ -438,7 +514,13 @@ function CaseStudies({ theme }) {
           </CenteredTitle>
           <CardSection>
             <Card>
-              <Image src={cs24} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/Cyber-Security.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs24} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/Cyber-Security.pdf"
@@ -452,7 +534,13 @@ function CaseStudies({ theme }) {
               </Paragraph>
             </Card>
             <Card>
-              <Image src={cs24} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/Penetration-testing-report.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs24} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/Penetration-testing-report.pdf"
@@ -466,7 +554,13 @@ function CaseStudies({ theme }) {
               </Paragraph>
             </Card>
             <Card>
-              <Image src={cs24} />
+              <a
+                target="_blank"
+                href="https://developer-lab.de/assets/cases/Cyber-security-services.pdf"
+                rel="noopener noreferrer"
+              >
+                <Image src={cs24} />
+              </a>
               <CardTitle
                 target="_blank"
                 href="https://developer-lab.de/assets/cases/Cyber-security-services.pdf"
