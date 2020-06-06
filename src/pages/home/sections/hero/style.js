@@ -33,8 +33,9 @@ export const HeroSection = styled.section`
     padding: 15px 15px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -44,9 +45,9 @@ export const LeftSection = styled.div`
   display: flex;
   justify-self: flex-start;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: auto;
-    width: 100%;
+    width: auto;
   }
 `;
 
@@ -62,7 +63,7 @@ export const TextBlock = styled.div`
     align-self: flex-start;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     justify-content: flex-start;
     padding-top: 120px;
     height: auto;
@@ -98,6 +99,11 @@ export const RightSection = styled.div`
   height: 100vh;
   display: flex;
   align-items: flex-end;
+
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    margin-top: auto;
+  }
 
   @media screen and (max-width: 768px) {
     height: auto;

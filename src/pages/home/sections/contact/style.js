@@ -46,7 +46,7 @@ export const RightSection = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 90%;
+  width: calc(90% - 120px);
   height: auto;
   align-self: flex-start;
   margin-left: 120px;
