@@ -37,31 +37,20 @@ export const HeroSection = styled.section`
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (min-width: 1023px) and (orientation: portrait) {
+    min-height: 900px;
+    flex-direction: row;
+  }
 `;
 
 export const LeftSection = styled.div`
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-self: flex-start;
-
-  @media screen and (max-width: 1024px) {
-    height: auto;
-    width: auto;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const TextBlock = styled.div`
-  padding-top: 30px;
-  width: 540px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
 
   button {
     align-self: flex-start;
@@ -72,6 +61,17 @@ export const TextBlock = styled.div`
     padding-top: 120px;
     height: auto;
     margin-bottom: 50px;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    min-height: auto;
+  }
+
+  @media screen and (min-width: 1023px) and (orientation: portrait) {
+    min-height: 900px;
+    justify-content: center;
   }
 `;
 
@@ -107,11 +107,16 @@ export const RightSection = styled.div`
   @media screen and (max-width: 1024px) {
     height: auto;
     margin-top: auto;
+    width: 70%;
   }
 
   @media screen and (max-width: 768px) {
     height: auto;
     width: 100%;
+  }
+
+  @media screen and (min-width: 1023px) and (orientation: portrait) {
+    min-height: 900px;
   }
 `;
 

@@ -94,7 +94,9 @@ export const TabImage = styled.img`
   max-width: 100%;
 `;
 
-export const CenteredContent = styled.div``;
+export const CenteredContent = styled.div`
+  padding-bottom: 20px;
+`;
 
 export const FeaturedList = styled.ul`
   list-style: none;
@@ -104,6 +106,11 @@ export const FeaturedList = styled.ul`
 
 export const FeaturedListItem = styled.li`
   margin-bottom: 10px;
+  display: flex;
+
+  svg {
+    flex-shrink: 0;
+  }
 
   svg,
   ${Paragraph} {
