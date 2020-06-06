@@ -59,7 +59,7 @@ export const LeftSection = styled.div`
   @media screen and (max-width: 1024px) {
     justify-content: flex-start;
     padding-top: 120px;
-    height: auto;
+    min-height: auto;
     margin-bottom: 50px;
     width: 70%;
   }
