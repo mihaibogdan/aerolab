@@ -110,6 +110,7 @@ export const FeaturedListItem = styled.li`
 
   svg {
     flex-shrink: 0;
+    height: 24px;
   }
 
   svg,
