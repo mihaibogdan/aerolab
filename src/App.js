@@ -5,10 +5,12 @@ import { ThemeProvider } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import CookieConsent from 'components/cookieConsent';
 import theme from './config/theme.config';
 import GlobalStyle from './assets/styles/globalStyles';
 
+const CookieConsent = lazy(() =>
+  import(/* webpackChunkName: "CookieConsent" */ 'components/cookieConsent')
+);
 const Home = lazy(() => import(/* webpackChunkName: "Home" */ './pages/home'));
 const CaseStudies = lazy(() =>
   import(/* webpackChunkName: "CaseStudies" */ './pages/case_studies')
@@ -39,8 +41,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Router>
-        <CookieConsent />
         <Suspense fallback="">
+          <CookieConsent />
           <Switch>
             <Route exact path="/">
               <Home />
