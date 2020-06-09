@@ -35,6 +35,10 @@ export const CardSection = styled.div`
   padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
+
+  a {
+    width: 100%;
+  }
 `;
 
 export const Card = styled.div`
@@ -59,10 +63,7 @@ export const CardTitle = styled(Link)`
   line-height: 1.23;
   color: ${({ theme }) => theme.palette.primary.dark};
   text-align: center;
-`;
-
-export const Image = styled.img`
-  width: 100%;
-  align-self: center;
-  margin-bottom: 10px;
+  && {
+    width: auto;
+  }
 `;

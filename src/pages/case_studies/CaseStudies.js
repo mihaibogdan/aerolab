@@ -30,10 +30,11 @@ import cs24 from 'assets/img/case-studies/c_24.png';
 import cs25 from 'assets/img/case-studies/c_25.png';
 import cs26 from 'assets/img/case-studies/c_26.png';
 
-import NavbarInner from '../../components/navbar_inner';
-import Footer from '../../components/footer';
+import NavbarInner from 'components/navbar_inner';
+import Footer from 'components/footer';
+import LazyImage from 'components/lazy-image';
 
-import { Section, Container, CenteredTitle, CardSection, Card, CardTitle, Image } from './style';
+import { Section, Container, CenteredTitle, CardSection, Card, CardTitle } from './style';
 
 function CaseStudies({ theme }) {
   useEffect(() => {
@@ -54,8 +55,9 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/Car-Configurator-Peugeot-Citroen.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
+                style={{ width: '100%' }}
               >
-                <Image src={cs1} />
+                <LazyImage src={cs1} />
               </a>
               <CardTitle
                 target="_blank"
@@ -77,7 +79,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/philips.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs2} />
+                <LazyImage src={cs2} />
               </a>
               <CardTitle
                 target="_blank"
@@ -98,7 +100,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/bnp-paribas-online-banking.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs3} />
+                <LazyImage src={cs3} />
               </a>
               <CardTitle
                 target="_blank"
@@ -119,7 +121,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/vw.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs4} />
+                <LazyImage src={cs4} />
               </a>
               <CardTitle
                 target="_blank"
@@ -141,7 +143,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/bnp-paribas-corporate-banking.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs5} />
+                <LazyImage src={cs5} />
               </a>
               <CardTitle
                 target="_blank"
@@ -158,7 +160,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://medistoric.ro/" rel="noopener noreferrer">
-                <Image src={cs6} />
+                <LazyImage src={cs6} />
               </a>
               <CardTitle
                 target="_blank"
@@ -185,7 +187,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/bnp-paribas-mobile-banking.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs7} />
+                <LazyImage src={cs7} />
               </a>
               <CardTitle
                 target="_blank"
@@ -206,7 +208,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/raiffeisen.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs8} />
+                <LazyImage src={cs8} />
               </a>
               <CardTitle
                 target="_blank"
@@ -223,7 +225,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://runlive.fit/" rel="noopener noreferrer">
-                <Image src={cs9} />
+                <LazyImage src={cs9} />
               </a>
               <CardTitle
                 target="_blank"
@@ -241,7 +243,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://heriapro.com/" rel="noopener noreferrer">
-                <Image src={cs10} />
+                <LazyImage src={cs10} />
               </a>
               <CardTitle
                 target="_blank"
@@ -258,7 +260,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.nickis.com" rel="noopener noreferrer">
-                <Image src={cs11} />
+                <LazyImage src={cs11} />
               </a>
               <CardTitle
                 target="_blank"
@@ -275,7 +277,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.askdata.com" rel="noopener noreferrer">
-                <Image src={cs12} />
+                <LazyImage src={cs12} />
               </a>
               <CardTitle
                 target="_blank"
@@ -297,7 +299,7 @@ function CaseStudies({ theme }) {
           <CardSection>
             <Card>
               <a target="_blank" href="https://www.ohhluilu.com/" rel="noopener noreferrer">
-                <Image src={cs13} />
+                <LazyImage src={cs13} />
               </a>
               <CardTitle
                 target="_blank"
@@ -314,7 +316,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.nberg.de/" rel="noopener noreferrer">
-                <Image src={cs14} />
+                <LazyImage src={cs14} />
               </a>
               <CardTitle
                 target="_blank"
@@ -331,7 +333,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.doersoflondon.com/" rel="noopener noreferrer">
-                <Image src={cs15} />
+                <LazyImage src={cs15} />
               </a>
               <CardTitle
                 target="_blank"
@@ -348,7 +350,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://ernestleoty.com/" rel="noopener noreferrer">
-                <Image src={cs16} />
+                <LazyImage src={cs16} />
               </a>
               <CardTitle
                 target="_blank"
@@ -369,7 +371,7 @@ function CaseStudies({ theme }) {
           <CardSection>
             <Card>
               <a target="_blank" href="https://trinkform.de/" rel="noopener noreferrer">
-                <Image src={cs17} />
+                <LazyImage src={cs17} />
               </a>
               <CardTitle
                 target="_blank"
@@ -386,7 +388,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.vidima.de/" rel="noopener noreferrer">
-                <Image src={cs18} />
+                <LazyImage src={cs18} />
               </a>
               <CardTitle
                 target="_blank"
@@ -403,7 +405,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://www.agent25.de/" rel="noopener noreferrer">
-                <Image src={cs19} />
+                <LazyImage src={cs19} />
               </a>
               <CardTitle
                 target="_blank"
@@ -424,7 +426,7 @@ function CaseStudies({ theme }) {
           <CardSection>
             <Card>
               <a target="_blank" href="https://waffen-baumgartner.com/" rel="noopener noreferrer">
-                <Image src={cs20} />
+                <LazyImage src={cs20} />
               </a>
               <CardTitle
                 target="_blank"
@@ -441,7 +443,7 @@ function CaseStudies({ theme }) {
 
             <Card>
               <a target="_blank" href="https://shop.3d-model.com/" rel="noopener noreferrer">
-                <Image src={cs22} />
+                <LazyImage src={cs22} />
               </a>
               <CardTitle
                 target="_blank"
@@ -462,7 +464,7 @@ function CaseStudies({ theme }) {
           <CardSection>
             <Card>
               <a target="_blank" href="https://www.sportcenter-hahn.de/" rel="noopener noreferrer">
-                <Image src={cs25} />
+                <LazyImage src={cs25} />
               </a>
               <CardTitle
                 target="_blank"
@@ -478,7 +480,7 @@ function CaseStudies({ theme }) {
             </Card>
             <Card>
               <a target="_blank" href="https://autopflege-gruenwald.de/" rel="noopener noreferrer">
-                <Image src={cs26} />
+                <LazyImage src={cs26} />
               </a>
               <CardTitle
                 target="_blank"
@@ -494,7 +496,7 @@ function CaseStudies({ theme }) {
             </Card>
             <Card>
               <a target="_blank" href="https://karolinwappler.de/" rel="noopener noreferrer">
-                <Image src={cs23} />
+                <LazyImage src={cs23} />
               </a>
               <CardTitle
                 target="_blank"
@@ -519,7 +521,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/Cyber-Security.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs24} />
+                <LazyImage src={cs24} />
               </a>
               <CardTitle
                 target="_blank"
@@ -539,7 +541,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/Penetration-testing-report.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs24} />
+                <LazyImage src={cs24} />
               </a>
               <CardTitle
                 target="_blank"
@@ -559,7 +561,7 @@ function CaseStudies({ theme }) {
                 href="https://developer-lab.de/assets/cases/Cyber-security-services.pdf"
                 rel="noopener noreferrer"
               >
-                <Image src={cs24} />
+                <LazyImage src={cs24} />
               </a>
               <CardTitle
                 target="_blank"
