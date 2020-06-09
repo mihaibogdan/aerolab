@@ -35,7 +35,7 @@ function Footer({ theme }) {
             <Paragraph color="rgba(255, 255, 255, 0.7)">
               58 Howard Street #2 San Francisco, CA 941
             </Paragraph>
-            <FooterLink href="mailto:hello@developer-lab.de">contact@aereland.com</FooterLink>
+            <FooterLink href="mailto:hello@developer-lab.de">hello@developer-lab.de</FooterLink>
             <FooterLink to="/terms-and-conditions">AGB</FooterLink>
             <FooterLink to="/data-protections">Datenschutzerklärung</FooterLink>
             <FooterLink to="/contact">Impressum</FooterLink>

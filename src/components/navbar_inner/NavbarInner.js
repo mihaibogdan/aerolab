@@ -56,7 +56,7 @@ function Navbar({ theme }) {
           color={theme.palette.neutral.white}
           backgroundColor={theme.palette.accent}
         >
-          <WhatsappIcon width="24px" />
+          <WhatsappIcon width="24px" height="24px" />
         </LinkButton>
 
         <HamburgerMenu
